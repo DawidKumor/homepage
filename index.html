@@ -9,12 +9,21 @@
 </head>
 
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="nauka-html.html">Notatki z nauki HTML i CSS</a></li>
+			</ul>
+		</nav>
+	</header>
 	<main>
-		<header>
+		<header id="top">
 			<h1>Dawid Kumor - Strona domowa</h1>
 		</header>
 		<section>
 			<h2>O mnie</h2>
+			<img src="Bez-tytułu.png" alt="Zdjęcie Dawida Kumora">
 			<p>Nazywam się Dawid Kumor i od ponad dekady pracuję w branży technicznej, rozwijając swoje umiejętności w
 				automatyce i robotyce. Urodziłem się w 1993 roku w Bielsku-Białej, gdzie mieszkam do dziś. Zawodowo
 				zajmuję się technologią produkcji, programowaniem oraz projektowaniem rozwiązań technicznych.</p>
@@ -37,7 +46,8 @@
 				<h2>Wykształcenie i umiejętności</h2>
 
 				<p>Ukończyłem studia licencjackie na Akademii Techniczno-Humanistycznej w Bielsku-Białej na kierunku
-					Automatyka i Robotyka. Podczas studiów specjalizowałem się w projektowaniu zrobotyzowanych stanowisk
+					Automatyka i Robotyka.<br /> Podczas studiów specjalizowałem się w projektowaniu zrobotyzowanych
+					stanowisk
 					pracy, co łączy się z moimi zawodowymi zainteresowaniami.</p>
 
 				<p>Pracuję z różnymi programami - od AutoCAD-a i SolidWorks-a, przez systemy programowania PLC jak GE
@@ -48,9 +58,10 @@
 
 			<article>
 				<h2>Zainteresowania i wartości</h2>
-
+				Przejdz do notatek o <a href="#git-github">GIT i GitHub</a>
 				<p>Poza pracą wolonturiuję w lokalnym schronisku dla zwierząt. Lubię czytać książki, oglądam filmy i
-					interesuję się kulturą antyczną. Jeżdżę na rowerze szosowym i zimą próbuję swoich sił na nartach.
+					interesuję się kulturą antyczną.<br /> Jeżdżę na rowerze szosowym i zimą próbuję swoich sił na
+					nartach.
 					Ważne są dla mnie wartości równości i tolerancji - angażuję się w działania na rzecz społeczności
 					LGBTQIA+ i współorganizuję marsze równości w Bielsku-Białej.</p>
 
@@ -68,12 +79,28 @@
 					Znaczniki HTML
 					definiują strukturę treści na stronie, np. nagłówki, paragrafy, linki, obrazy itp.</p>
 				<p>main - element główny dokumentu HTML
-					section - sekcja lub rozdział w dokumencie
-					article - samodzielna część treści, np. wpis na blogu
-					header - nagłówek sekcji lub dokumentu
-					h1, h2, h3 - nagłówki o różnych poziomach ważności
-					p - paragraf tekstu
-					footer - stopka dokumentu lub sekcji
+				<ul>
+					<li>section - sekcja lub rozdział w dokumencie</li>
+					<li>article - samodzielna część treści, np. wpis na blogu</li>
+					<li>header - nagłówek sekcji lub dokumentu</li>
+					<li>h1, h2, h3 - nagłówki o różnych poziomach ważności</li>
+					<li>p - paragraf tekstu</li>
+					<li>footer - stopka dokumentu lub sekcji</li>
+					<li>br - łamanie linii</li>
+					<li>b - pogrubienie tekstu</li>
+					<li>i - kursywa tekstu</li>
+					<li>u - podkreślenie tekstu</li>
+					<li>strong - wyróżnienie ważnego tekstu</li>
+					<li>em - wyróżnienie tekstu (np. kursywa) może oznaczać ironie</li>
+					<li> b i i i u nie mają znaczenia semantycznego. Tylko wyróżnianie fragmentu tekstu. Tego już nie
+						robimy. Robimy to w stylach. </li>
+					<li>strong i em mają znaczenie semantyczne</li>
+					<li>a - link do innej strony lub miejsca w tej samej stronie</li>
+					<li>img src i alt- wstawienie obrazu, źródło i opis dla osób z niepełnosprawnościami</li>
+					<li>id - identyfikator elementu</li>
+					<li>class - klasa elementu</li>
+					<li>nav - element zawierający nawigację</li>
+				</ul>
 				</p>
 				<p>W3C - specyfikacja HTML,
 					validator.w3.org - narzędzie do sprawdzania poprawności kodu HTML
@@ -109,7 +136,7 @@
 					MDN Web Docs - dokumentacja i zasoby dla programistów webowych
 				</p>
 			</article>
-			<article>
+			<article id="git-github">
 				<h3>GIT i GitHub</h3>
 				<p>Git to system kontroli wersji, który pozwala śledzić zmiany w plikach i zarządzać projektem. GitHub
 					to platforma oparta na Git, umożliwiająca współpracę nad projektami oraz hostowanie repozytoriów.
@@ -127,10 +154,11 @@
 				</p>
 			</article>
 		</section>
-		<footer>
-			<p>Strona stworzona przez Dawida Kumora </p>
-		</footer>
+
 	</main>
+	<footer>
+		<p>Strona stworzona przez Dawida Kumora <a href="#top">Wróć do góry</a> </p>
+	</footer>
 </body>
 
 </html>
