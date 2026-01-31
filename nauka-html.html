@@ -105,6 +105,14 @@
                     validator.w3.org - narzędzie do sprawdzania poprawności kodu HTML
                     MDN Web Docs - dokumentacja i zasoby dla programistów webowych
                 </p>
+                <article>
+                    <h3>Komentarze w kodzie</h3>
+                    <p>HTML: &lt;!-- Komentarz w HTML --&gt;</p>
+                    <p>CSS: /* Komentarz w CSS */</p>
+                    <p>JavaScript: // Komentarz jednoliniowy
+                        /* Komentarz wieloliniowy */
+                    </p>
+                </article>
             </article>
             <article>
                 <h3>CSS</h3>
@@ -169,6 +177,54 @@
                     <li>snake_case - słowa oddzielone podkreśleniami (np. moja_zmienna)</li>
                     <li>kebab-case - słowa oddzielone myślnikami (np. moja-zmienna)</li>
                 </ol>
+
+            </article>
+            <article>
+                <h3>Jak działa internet i przeglądrka</h3>
+                <p>Przeglądarka internetowa to oprogramowanie służące do wyświetlania stron internetowych. Pobiera
+                    pliki z serwera za pomocą protokołu HTTP/HTTPS i renderuje je na ekranie użytkownika.</p>
+                <p>Podstawowe elementy działania internetu:
+                    Serwer - komputer przechowujący pliki stron internetowych
+                    Klient - przeglądarka użytkownika
+                    Protokół HTTP/HTTPS - zasady komunikacji między klientem a serwerem
+                    DNS - system tłumaczący nazwy domen na adresy IP
+                </p>
+                <h4>Z czego składa się URL</h4>
+                <p>URL (Uniform Resource Locator) to adres internetowy składający się z kilku części:
+                    Protokół - np. http:// lub https://
+                    Domenna - nazwa strony, np. www.przyklad.com
+                    Ścieżka - lokalizacja zasobu na serwerze, np. /katalog/plik.html
+                    Parametry - dodatkowe informacje przekazywane do serwera, np. ?id=123
+                    Fragment - odwołanie do konkretnej sekcji na stronie, np. #sekcja1
+                    / - root katalog
+                    Przykład pełnego URL: https://www.przyklad.com/katalog/plik.html?id=123#sekcja1
+                </p>
+                <h4>Jak działa przeglądarka internetowa</h4>
+                <p>Przeglądarka internetowa działa w kilku etapach:
+                    1. Wpisuje się adres URL w pasek adresu.
+                    2. Przeglądarka szykad adres IP serwera za pomocą DNS.
+                    3. Przeglądarka wysyła żądanie do serwera za pomocą protokołu HTTP/HTTPS.
+                    4. Serwer odpowiada, przesyłając pliki HTML, CSS i JavaScript.
+                    5. Przeglądarka analizuje kod HTML i CSS, a następnie renderuje stronę na ekranie użytkownika.
+                </p>
+                <h4>Kody odpowiedzi HTTP</h4>
+                <p>Kody odpowiedzi HTTP są trzycyfrowymi kodami, które serwer wysyła do przeglądarki w celu informowania
+                    o stanie zapytania:
+                    1XX - Informational - informacja o przetwarzaniu zapytania
+                    200 - OK - zapytanie zakończone sukcesem
+                    30X - Redirection - przekierowanie do innego zasobu
+                    400 - Bad Request - błędne zapytanie
+                    401 - Unauthorized - brak autoryzacji
+                    403 - Forbidden - dostęp zabroniony
+                    404 - Not Found - strona nie została znaleziona
+                    50X - Internal Server Error - błąd wewnętrzny serwera
+                </p>
+                <h4>Czym jest root? Ścieżki względne i bezwzględne</h4>
+                <p>Root (główny katalog) to katalog główny systemu plików. W kontekście internetu, root to katalog
+                    główny serwera WWW.
+                    Ścieżki bezwzględne zaczynają się od znaku "/", np. /katalog/plik.html.
+                    Ścieżki względne są względem bieżącego katalogu, np. katalog/plik.html.
+                </p>
 
             </article>
         </section>
