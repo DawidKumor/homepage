@@ -71,10 +71,11 @@
         </section>
         <section>
 
-            <h2>Notatki z lekcji</h2>
+            <h2 class="note-header">Notatki z lekcji</h2>
             <article>
-                <h3>HTML</h3>
-                <p>HTML (HyperText Markup Language) to język znaczników używany do tworzenia stron internetowych.
+                <h3 class="note-h3">HTML</h3>
+                <img src="html.webp" alt="HTML logo">
+                <p><strong>HTML (HyperText Markup Language)</strong> to język znaczników używany do tworzenia stron internetowych.
                     Znaczniki HTML
                     definiują strukturę treści na stronie, np. nagłówki, paragrafy, linki, obrazy itp.</p>
                 <p>main - element główny dokumentu HTML
@@ -99,6 +100,7 @@
                     <li>id - identyfikator elementu</li>
                     <li>class - klasa elementu</li>
                     <li>nav - element zawierający nawigację</li>
+                    <li>div - element ogólnego przeznaczenia do grupowania innych elementów</li>
                 </ul>
                 </p>
                 <p>W3C - specyfikacja HTML,
@@ -106,7 +108,7 @@
                     MDN Web Docs - dokumentacja i zasoby dla programistów webowych
                 </p>
                 <article>
-                    <h3>Komentarze w kodzie</h3>
+                    <h3 class="note-h3">Komentarze w kodzie</h3>
                     <p>HTML: &lt;!-- Komentarz w HTML --&gt;</p>
                     <p>CSS: /* Komentarz w CSS */</p>
                     <p>JavaScript: // Komentarz jednoliniowy
@@ -115,7 +117,8 @@
                 </article>
             </article>
             <article>
-                <h3>CSS</h3>
+                <h3 class="note-h3">CSS</h3>
+                <img src="Official_CSS_Logo.svg.png" alt="CSS logo">
                 <p>CSS (Cascading Style Sheets) to język stylów używany do opisywania wyglądu i formatowania dokumentów
                     HTML.
                     CSS pozwala na oddzielenie treści od prezentacji, umożliwiając kontrolę nad kolorami, czcionkami,
@@ -147,27 +150,29 @@
                 </p>
             </article>
             <article>
-                <h3>JavaScript</h3>
+                <h3 class="note-h3">JavaScript</h3>
+                <img src="Unofficial_JavaScript_logo_2.svg" alt="JavaScript logo">
                 <p>JavaScript to język programowania używany do tworzenia interaktywnych elementów na stronach
                     internetowych. Pozwala na manipulowanie strukturą HTML i stylami CSS w czasie rzeczywistym, co
                     umożliwia dynamiczne zmiany na stronie bez konieczności jej przeładowywania.</p>
                 <p>Podstawowe elementy JavaScript:
                     Zmienne - przechowują dane (var, let, const)
                     stałe - przechowują niezmienne dane (const)
-                    Operatory - symbole do wykonywania operacji matematycznych i logicznych (+, -, *, /, %, ==, ===, !=, !==, <, >, <=, >=) 
-                    Funkcje - bloki kodu wykonujące określone zadania
-                    Instrukcje warunkowe - if, else, switch
-                    Pętle - for, while, do...while, for ...of, for ...in
-                    Tablice - struktury danych przechowujące listy wartości
-                    Obiekty - struktury danych przechowujące właściwości i metody
-                    wartości logiczne - true, false
-                    literały - liczby, stringi
+                    Operatory - symbole do wykonywania operacji matematycznych i logicznych (+, -, *, /, %, ==, ===, !=,
+                    !==, <,>, <=,>=)
+                            Funkcje - bloki kodu wykonujące określone zadania
+                            Instrukcje warunkowe - if, else, switch
+                            Pętle - for, while, do...while, for ...of, for ...in
+                            Tablice - struktury danych przechowujące listy wartości
+                            Obiekty - struktury danych przechowujące właściwości i metody
+                            wartości logiczne - true, false
+                            literały - liczby, stringi
 
                 </p>
-                </article>
-                
+            </article>
+
             <article id="git-github">
-                <h3>GIT i GitHub</h3>
+                <h3 class="note-h3">GIT i GitHub</h3>
                 <p>Git to system kontroli wersji, który pozwala śledzić zmiany w plikach i zarządzać projektem. GitHub
                     to platforma oparta na Git, umożliwiająca współpracę nad projektami oraz hostowanie repozytoriów.
                 </p>
@@ -184,13 +189,13 @@
                 </p>
             </article>
             <article>
-                <h3>Mazywanie rzeczy</h3>
+                <h3 class="note-h3">Nazywanie rzeczy</h3>
                 <ul>
                     <li>Nazywamy bez polskich znaków i spacji</li>
                     <li>Angielskie słowa</li>
                     <li>Trzymamy się jednego schematu</li>
                 </ul>
-                <h4>Konwencje nazewnictwa</h4>
+                <h4 class="note-h4">Konwencje nazewnictwa</h4>
                 <ol>
                     <li>camelCase - pierwsze słowo małą literą, kolejne z dużej (np. mojaZmienna)</li>
                     <li>PascalCase - każde słowo z dużej litery (np. MojaZmienna)</li>
@@ -200,7 +205,7 @@
 
             </article>
             <article>
-                <h3>Jak działa internet i przeglądrka</h3>
+                <h3 class="note-h3">Jak działa internet i przeglądrka</h3>
                 <p>Przeglądarka internetowa to oprogramowanie służące do wyświetlania stron internetowych. Pobiera
                     pliki z serwera za pomocą protokołu HTTP/HTTPS i renderuje je na ekranie użytkownika.</p>
                 <p>Podstawowe elementy działania internetu:
@@ -209,7 +214,7 @@
                     Protokół HTTP/HTTPS - zasady komunikacji między klientem a serwerem
                     DNS - system tłumaczący nazwy domen na adresy IP
                 </p>
-                <h4>Z czego składa się URL</h4>
+                <h4 class="note-h4">Z czego składa się URL</h4>
                 <p>URL (Uniform Resource Locator) to adres internetowy składający się z kilku części:
                     Protokół - np. http:// lub https://
                     Domenna - nazwa strony, np. www.przyklad.com
@@ -219,7 +224,7 @@
                     / - root katalog
                     Przykład pełnego URL: https://www.przyklad.com/katalog/plik.html?id=123#sekcja1
                 </p>
-                <h4>Jak działa przeglądarka internetowa</h4>
+                <h4 class="note-h4">Jak działa przeglądarka internetowa</h4>
                 <p>Przeglądarka internetowa działa w kilku etapach:
                     1. Wpisuje się adres URL w pasek adresu.
                     2. Przeglądarka szykad adres IP serwera za pomocą DNS.
@@ -227,7 +232,7 @@
                     4. Serwer odpowiada, przesyłając pliki HTML, CSS i JavaScript.
                     5. Przeglądarka analizuje kod HTML i CSS, a następnie renderuje stronę na ekranie użytkownika.
                 </p>
-                <h4>Kody odpowiedzi HTTP</h4>
+                <h4 class="note-h4">Kody odpowiedzi HTTP</h4>
                 <p>Kody odpowiedzi HTTP są trzycyfrowymi kodami, które serwer wysyła do przeglądarki w celu informowania
                     o stanie zapytania:
                     1XX - Informational - informacja o przetwarzaniu zapytania
@@ -239,13 +244,33 @@
                     404 - Not Found - strona nie została znaleziona
                     50X - Internal Server Error - błąd wewnętrzny serwera
                 </p>
-                <h4>Czym jest root? Ścieżki względne i bezwzględne</h4>
+                <h4 class="note-h4">Czym jest root? Ścieżki względne i bezwzględne</h4>
                 <p>Root (główny katalog) to katalog główny systemu plików. W kontekście internetu, root to katalog
                     główny serwera WWW.
                     Ścieżki bezwzględne zaczynają się od znaku "/", np. /katalog/plik.html.
                     Ścieżki względne są względem bieżącego katalogu, np. katalog/plik.html.
                 </p>
 
+            </article>
+            <article>
+                <h3 class="note-h3">Terminal linuksowy</h3>
+                <p>Terminal to interfejs tekstowy do komunikacji z systemem operacyjnym. W systemach Linux i macOS można
+                    go otworzyć za pomocą skrótu Ctrl+Alt+T.</p>
+                <h4 class="note-h4">Podstawowe komendy terminala</h4>
+                <ul>
+                    <li>ls - lista plików i katalogów w bieżącym katalogu</li>
+                    <li>cd - zmiana katalogu (np. cd katalog cd .. katalog wyżej, cd ~ katalog domowy)</li>
+                    <li>pwd - pokazuje aktualny katalog roboczy</li>
+                    <li>mkdir - tworzy nowy katalog (np. mkdir nowy_katalog)</li>
+                    <li>touch - tworzy nowy plik (np. touch nowy_plik.txt)</li>
+                    <li>rm - usuwa plik lub katalog (np. rm plik.txt)</li>
+                    <li>cp - kopiuje plik lub katalog (np. cp plik.txt kopia_plik.txt)</li>
+                    <li>mv - przenosi lub zmienia nazwę pliku lub katalogu (np. mv stara_nazwa.txt nowa_nazwa.txt)</li>
+                    <li>cat - wyświetla zawartość pliku (np. cat plik.txt)</li>
+                    <li>nano - edytor tekstu w terminalu (np. nano plik.txt)</li>
+                    <li>clear - czyści ekran terminala</li>
+                    <li>code . - otwiera edytor kodu VS Code w bieżącym katalogu</li>
+                </ul>
             </article>
         </section>
 

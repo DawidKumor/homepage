@@ -14,3 +14,16 @@ body {
 	background: darkgray;
 	color: #112d49;
 }
+.abaut-me {
+	color:antiquewhite;
+	background: #d8dce0;
+}
+.note-h3 {
+	color: brown;
+}
+.note-h4 {
+	color: darkred;
+}
+.note-header {
+	background: lightgray;
+}
