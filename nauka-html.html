@@ -75,7 +75,8 @@
             <article>
                 <h3 class="note-h3">HTML</h3>
                 <img src="html.webp" alt="HTML logo">
-                <p><strong>HTML (HyperText Markup Language)</strong> to język znaczników używany do tworzenia stron internetowych.
+                <p><strong>HTML (HyperText Markup Language)</strong> to język znaczników używany do tworzenia stron
+                    internetowych.
                     Znaczniki HTML
                     definiują strukturę treści na stronie, np. nagłówki, paragrafy, linki, obrazy itp.</p>
                 <p>main - element główny dokumentu HTML
@@ -143,6 +144,82 @@
                     margin - marginesy zewnętrzne
                     padding - odstępy wewnętrzne
                     border - obramowanie
+                </p>
+                <h4 class="note-h4">CSS display</h4>
+                <p>
+                <ul>
+                    <li>display: block - element blokowy</li>
+                    <li>display: inline - element liniowy</li>
+                    <li>display: inline-block - element liniowy z możliwością ustawiania szerokości i wysokości</li>
+                    <li>width - szerokość elementu</li>
+                    <li>height - wysokość elementu</li>
+                    <li>box-sizing: content-box - domyślny model pudełkowy (szerokość i wysokość dotyczą tylko
+                        zawartości)
+                        box-sizing: border-box - szerokość i wysokość obejmują zawartość, padding i border</li>
+                    <li>max-width - maksymalna szerokość elementu</li>
+                    <li>max-height - maksymalna wysokość elementu</li>
+                    <li>min-width - minimalna szerokość elementu</li>
+                    <li>min-height - minimalna wysokość elementu</li>
+                </ul>
+                </p>
+                <p>
+                <ol>
+                    <li>overflow: visible - zawartość wychodzi poza element</li>
+                    <li>overflow: hidden - zawartość jest przycinana</li>
+                    <li>overflow: scroll - pojawiają się paski przewijania</li>
+                    <li>overflow: auto - paski przewijania pojawiają się tylko wtedy, gdy są potrzebne</li>
+                    <li>overflow: clip - przycinanie zawartości do obszaru elementu</li>
+                </ol>
+                </p>
+                <p>
+                <h4 class="note-h4">CSS jednostki</h4>
+                <ul>
+                    <li>px - piksele (stała jednostka)</li>
+                    <li>em - jednostka względna względem rozmiaru czcionki rodzica</li>
+                    <li>rem - jednostka względna względem rozmiaru czcionki elementu root (html)</li>
+                    <li>% - procenty względem elementu rodzica</li>
+                    <li>vh - procent wysokości widoku przeglądarki (1vh = 1% wysokości widoku)</li>
+                    <li>vw - procent szerokości widoku przeglądarki (1vw = 1% szerokości widoku)</li>
+                </ul>
+                </p>
+                <p>
+                <h4 class="note-h4">CSS Box Model</h4>
+                <p>Model pudełkowy CSS opisuje sposób, w jaki przeglądarka renderuje elementy na stronie. Składa się
+                    z czterech głównych części:
+                    Content (zawartość) - obszar, w którym znajduje się treść elementu (tekst, obraz itp.)</br>
+                    Padding (wypełnienie) - przestrzeń między zawartością a obramowaniem elementu</br>
+                    Border (obramowanie) - linia otaczająca element</br>
+                    Margin (margines) - przestrzeń między obramowaniem elementu a innymi elementami na stronie</br>
+                <figure>
+                    <img src="box-model.png" alt="CSS Box Model">
+                    <figcaption>Źródło: MDN Web Docs - CSS Box Model</figcaption>
+                </figure>
+                </p>
+                <h5>Padding</h5>
+                <p>Padding to przestrzeń między zawartością elementu a jego obramowaniem. Można ustawić padding
+                    dla wszystkich stron elementu lub osobno dla każdej strony (padding-top, padding-right,
+                    padding-bottom, padding-left).</p>
+                <h5>Border</h5>
+                <p>Border to linia otaczająca element. Można ustawić styl, szerokość i kolor obramowania (np. border:
+                    1px solid black;
+                    border-top: 2px dashed red;)
+                    Border style: none, solid, dashed, dotted, double, groove, ridge, inset, outset<br>
+                    Border-radius: zaokrąglenie rogów elementu (np. border-radius: 10px; border-radius: 50%;)
+                </p>
+                <h5>Margin</h5>
+                <p>Margin to przestrzeń między obramowaniem elementu a innymi elementami na stronie. Można ustawić
+                    margin dla wszystkich stron elementu lub osobno dla każdej strony (margin-top, margin-right,
+                    margin-bottom, margin-left).</p>
+                <h4 class="note-h4">CSS box-sizing</h4>
+                <p>Właściwość box-sizing określa, jak przeglądarka oblicza całkowitą szerokość i wysokość elementu.
+                    Istnieją dwa główne tryby:
+                    content-box (domyślny) - szerokość i wysokość dotyczą tylko zawartości elementu. Padding i
+                    border są dodawane do tych wartości, co może prowadzić do większych rozmiarów elementu niż
+                    oczekiwano.
+                    border-box - szerokość i wysokość obejmują zawartość, padding i border. Oznacza to, że jeśli
+                    ustawisz szerokość na 100px, to całkowita szerokość elementu pozostanie 100px, niezależnie
+                    od wartości padding i border.
+                </p>
                 </p>
                 <p>Źródła:
                     CSS-Tricks - poradniki i artykuły o CSS
