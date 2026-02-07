@@ -209,7 +209,10 @@
                 <h5>Margin</h5>
                 <p>Margin to przestrzeń między obramowaniem elementu a innymi elementami na stronie. Można ustawić
                     margin dla wszystkich stron elementu lub osobno dla każdej strony (margin-top, margin-right,
-                    margin-bottom, margin-left).</p>
+                    margin-bottom, margin-left).
+                    margin auto - automatyczne wyrównanie elementu (np. margin: 0 auto; - centrowanie elementu poziomo)
+
+                </p>
                 <h4 class="note-h4">CSS box-sizing</h4>
                 <p>Właściwość box-sizing określa, jak przeglądarka oblicza całkowitą szerokość i wysokość elementu.
                     Istnieją dwa główne tryby:
@@ -219,8 +222,44 @@
                     border-box - szerokość i wysokość obejmują zawartość, padding i border. Oznacza to, że jeśli
                     ustawisz szerokość na 100px, to całkowita szerokość elementu pozostanie 100px, niezależnie
                     od wartości padding i border.
+                    deklaracja box-sizing: border-box jest często używana, ponieważ ułatwia kontrolę nad rozmiarami
+                    elementów i
+                    zapobiega nieoczekiwanym rozmiarom spowodowanym przez padding i border.
+                <figure>
+                    <img src="content-box.png" alt="CSS box-sizing">
+                    <figcaption>Źródło: MDN Web Docs - CSS box-sizing</figcaption>
+                </figure>
                 </p>
+                <h4 class="note-h4">position</h4>
+                <p>Właściwość position określa, jak element jest pozycjonowany na stronie. Istnieją cztery główne
+                    wartości:
+                    static (domyślna) - element jest pozycjonowany zgodnie z normalnym przepływem dokumentu</br>
+                    relative - element jest pozycjonowany względem swojej normalnej pozycji. Można użyć właściwości
+                    top, right, bottom, left do przesunięcia elementu względem jego normalnej pozycji</br>
+                    absolute - element jest pozycjonowany względem najbliższego przodka o pozycji relative lub
+                    absolute. Jeśli nie ma takiego przodka, element jest pozycjonowany względem okna przeglądarki</br>
+                    fixed - element jest pozycjonowany względem okna przeglądarki i pozostaje w tej samej pozycji
+                    nawet podczas przewijania strony<br>
+                    sticky - element jest pozycjonowany względnie do swojego normalnego położenia, ale staje się fixed,
+                    gdy osiąga określony punkt podczas przewijania strony<br>
+                    float - element jest pozycjonowany na lewo lub prawo, a tekst i inne elementy opływają go. Teraz
+                    raczej się nie używa ale dobry do obrazków.<br>
+                    clear - właściwość używana w połączeniu z float, aby zapobiec opływaniu elementów (np. clear: both;
+                    clear: left; clear: right;)
+
+
                 </p>
+                <h5>przesuwanie elementów absolute:</h5>
+                <ul>
+                    <li>top - przesuwa element w dół</li>
+                    <li>right - przesuwa element w lewo</li>
+                    <li>bottom - przesuwa element w górę</li>
+                    <li>left - przesuwa element w prawo</li>
+                </ul>
+                <h5>z-index</h5>
+                <p>Właściwość z-index określa kolejność nakładania się elementów pozycjonowanych (relative, absolute,
+                    fixed). Elementy z wyższym z-index będą wyświetlane nad elementami z niższym z-index. Domyślna
+                    wartość z-index to 0.</p>
                 <p>Źródła:
                     CSS-Tricks - poradniki i artykuły o CSS
                     MDN Web Docs - dokumentacja i zasoby dla programistów webowych
@@ -245,6 +284,27 @@
                             wartości logiczne - true, false
                             literały - liczby, stringi
 
+                </p>
+                <h4>Zmiennie w JavaScript</h4>
+                <p>Zmienne w JavaScript służą do przechowywania danych. Można je deklarować za pomocą słów kluczowych
+                    var,
+                    let lub const. Różnice między nimi:
+                    var - zmienna o zasięgu funkcji, może być redeklarowana i hoistowana
+                    let - zmienna o zasięgu bloku, nie może być redeklarowana, ale jest hoistowana (nie można jej
+                    użyć przed deklaracją)
+                    const - stała o zasięgu bloku, nie może być redeklarowana ani przypisana ponownie, ale jest
+                    hoistowana (nie można jej użyć przed deklaracją)
+                    Rodzaje danych:
+                    number - liczby (np. 42, 3.14)
+                    bigint - duże liczby całkowite (np. 9007199254740991n)
+                    string - tekst (np. "Hello, world!")
+                    boolean - wartości logiczne (true, false)
+                    null - brak wartości
+                    undefined - niezdefiniowana wartość
+                    symbol - unikalne identyfikatory
+                    object - struktury danych przechowujące właściwości i metody (np. {name: "Alice", age: 30})
+                    <strong>type of</strong> - operator zwracający typ danych (np. typeof 42 // "number", typeof "Hello"
+                    // "string")
                 </p>
             </article>
 
@@ -348,6 +408,14 @@
                     <li>clear - czyści ekran terminala</li>
                     <li>code . - otwiera edytor kodu VS Code w bieżącym katalogu</li>
                 </ul>
+            </article>
+            <article>
+                <h3 class="note-h3">Normalizacja vs reset</h3>
+                <p>Normalizacja i reset to techniki stosowane w CSS w celu zapewnienia spójności wyglądu stron internetowych
+                    na różnych przeglądarkach. Normalizacja (normalize.css) to zbiór reguł CSS, które mają na celu
+                    ujednolicenie domyślnych stylów przeglądarek, zachowując jednocześnie pewne różnice. Reset CSS to
+                    bardziej drastyczne podejście, które usuwa wszystkie domyślne style przeglądarek, co może prowadzić do
+                    konieczności ponownego definiowania wielu stylów od podstaw.</p>
             </article>
         </section>
 
