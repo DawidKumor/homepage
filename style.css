@@ -33,3 +33,14 @@ body {
 .note-header {
 	background: lightgray;
 }
+.navigation {
+	background: lightblue;
+	padding:20px;
+	
+}
+.navigation__link {
+	color: rgb(190, 179, 18);
+	text-decoration: none;
+	font-size: 10px;
+	margin-right: 20px;
+}
