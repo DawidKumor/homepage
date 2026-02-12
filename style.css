@@ -4,35 +4,7 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-h1 {
-	color: chartreuse;
-}
 
-h2 {
-	color: #1460AA;
-}
-
-section {
-	background: grey;
-}
-
-body {
-	background: darkgray;
-	color: #112d49;
-}
-.abaut-me {
-	color:antiquewhite;
-	background: #d8dce0;
-}
-.note-h3 {
-	color: brown;
-}
-.note-h4 {
-	color: darkred;
-}
-.note-header {
-	background: lightgray;
-}
 .navigation {
 	background: lightblue;
 	padding:20px;
@@ -41,6 +13,21 @@ body {
 .navigation__link {
 	color: rgb(190, 179, 18);
 	text-decoration: none;
-	font-size: 10px;
+	font-size: 15px;
 	margin-right: 20px;
 }
+#top {
+	padding: 16px;
+	background: darkgrey;
+}
+.section {
+	padding: 16px;
+	color: whitesmoke;
+	background: darkgrey;
+}
+.section__article {
+	margin-bottom: 16px;
+	background: grey;
+	padding: 16px;
+	border-radius: 32px;
+} 

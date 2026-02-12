@@ -11,71 +11,24 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="nauka-html.html">Notatki z nauki HTML i CSS</a></li>
-            </ul>
+        <nav class="navigation">
+
+            <li><a class="navigation__link" href="index.html">Strona główna</a></li>
+            <li><a class="navigation__link" href="nauka-html.html">Notatki z nauki HTML i CSS</a></li>
+
         </nav>
     </header>
     <main>
         <header id="top">
-            <h1>Dawid Kumor - Strona domowa</h1>
+            <h1>Notatki z nauki HTML i CSS</h1>
         </header>
-        <section>
-            <h2>O mnie</h2>
-            <p>Nazywam się Dawid Kumor i od ponad dekady pracuję w branży technicznej, rozwijając swoje umiejętności w
-                automatyce i robotyce. Urodziłem się w 1993 roku w Bielsku-Białej, gdzie mieszkam do dziś. Zawodowo
-                zajmuję się technologią produkcji, programowaniem oraz projektowaniem rozwiązań technicznych.</p>
 
-            <article>
-                <h2>Moja droga zawodowa</h2>
+        <section class="section">
 
-                <p>Przez lata pracowałem w różnych firmach, gdzie zdobywałem doświadczenie w obsłudze maszyn CNC,
-                    programowaniu sterowników PLC oraz projektowaniu w programach CAD. Ostatnio byłem zatrudniony w
-                    firmie Wech jako technolog, gdzie zajmowałem się kontaktem z klientami, tworzeniem dokumentacji
-                    technicznej i współpracą przy projektach inżynieryjnych. Wcześniej pracowałem w AVIO Polska przy
-                    obsłudze precyzyjnych szlifierek, w AGAMON jako elektronik-automatyk oraz w NEMAK POLAND w dziale
-                    gromadzenia danych.</p>
 
-                <p>Te doświadczenia nauczyły mnie praktycznego podejścia do rozwiązywania problemów technicznych oraz
-                    pracy w zespole. Każde miejsce pracy dało mi coś innego - od umiejętności diagnostycznych, przez
-                    znajomość procesów produkcyjnych, po doświadczenie w projektowaniu.</p>
-            </article>
-            <article>
-                <h2>Wykształcenie i umiejętności</h2>
-
-                <p>Ukończyłem studia licencjackie na Akademii Techniczno-Humanistycznej w Bielsku-Białej na kierunku
-                    Automatyka i Robotyka.<br /> Podczas studiów specjalizowałem się w projektowaniu zrobotyzowanych
-                    stanowisk
-                    pracy, co łączy się z moimi zawodowymi zainteresowaniami.</p>
-
-                <p>Pracuję z różnymi programami - od AutoCAD-a i SolidWorks-a, przez systemy programowania PLC jak GE
-                    Proficy czy TIA Portal, po oprogramowanie do analizy jakości. Znam metodyki ISO 9001 oraz narzędzia
-                    analityczne używane w przemyśle. Komunikuję się po angielsku na poziomie B2, a ostatnio uczę się
-                    koreańskiego dla przyjemności.</p>
-            </article>
-
-            <article>
-                <h2>Zainteresowania i wartości</h2>
-                Przejdz do notatek o <a href="#git-github">GIT i GitHub</a>
-                <p>Poza pracą wolonturiuję w lokalnym schronisku dla zwierząt. Lubię czytać książki, oglądam filmy i
-                    interesuję się kulturą antyczną.<br /> Jeżdżę na rowerze szosowym i zimą próbuję swoich sił na
-                    nartach.
-                    Ważne są dla mnie wartości równości i tolerancji - angażuję się w działania na rzecz społeczności
-                    LGBTQIA+ i współorganizuję marsze równości w Bielsku-Białej.</p>
-
-                <p>Staram się łączyć zainteresowania techniczne z humanistycznymi - uważam, że różnorodność perspektyw
-                    pomaga w lepszym rozumieniu świata i znajdowaniu ciekawszych rozwiązań, zarówno w pracy, jak i w
-                    życiu.</p>
-            </article>
-        </section>
-        <section>
-
-            <h2 class="note-header">Notatki z lekcji</h2>
-            <article>
-                <h3 class="note-h3">HTML</h3>
-                <img src="html.webp" alt="HTML logo">
+            <article class="section__article">
+                <h2 class="section__header">HTML</h2>
+                <img src="html.webp" alt="HTML logo" height="200px">
                 <p><strong>HTML (HyperText Markup Language)</strong> to język znaczników używany do tworzenia stron
                     internetowych.
                     Znaczniki HTML
@@ -109,8 +62,8 @@
                     validator.w3.org - narzędzie do sprawdzania poprawności kodu HTML
                     MDN Web Docs - dokumentacja i zasoby dla programistów webowych
                 </p>
-                <article>
-                    <h3 class="note-h3">Komentarze w kodzie</h3>
+                <article class="section__article">
+                    <h2 class="section__header">Komentarze w kodzie</h2>
                     <p>HTML: &lt;!-- Komentarz w HTML --&gt;</p>
                     <p>CSS: /* Komentarz w CSS */</p>
                     <p>JavaScript: // Komentarz jednoliniowy
@@ -118,9 +71,9 @@
                     </p>
                 </article>
             </article>
-            <article>
-                <h3 class="note-h3">CSS</h3>
-                <img src="Official_CSS_Logo.svg.png" alt="CSS logo">
+            <article class="section__article">
+                <h2 class="section__header">CSS</h2>
+                <img src="Official_CSS_Logo.svg.png" alt="CSS logo" height ="200px">
                 <p>CSS (Cascading Style Sheets) to język stylów używany do opisywania wyglądu i formatowania dokumentów
                     HTML.
                     CSS pozwala na oddzielenie treści od prezentacji, umożliwiając kontrolę nad kolorami, czcionkami,
@@ -146,7 +99,7 @@
                     padding - odstępy wewnętrzne
                     border - obramowanie
                 </p>
-                <h4 class="note-h4">CSS display</h4>
+                <h3 class="section__header">CSS display</h3>
                 <p>
                 <ul>
                     <li>display: block - element blokowy</li>
@@ -173,7 +126,7 @@
                 </ol>
                 </p>
                 <p>
-                <h4 class="note-h4">CSS jednostki</h4>
+                <h3 class="section__header">CSS jednostki</h3>
                 <ul>
                     <li>px - piksele (stała jednostka)</li>
                     <li>em - jednostka względna względem rozmiaru czcionki rodzica</li>
@@ -184,7 +137,7 @@
                 </ul>
                 </p>
                 <p>
-                <h4 class="note-h4">CSS Box Model</h4>
+                <h3 class="section__header">CSS Box Model</h3>
                 <p>Model pudełkowy CSS opisuje sposób, w jaki przeglądarka renderuje elementy na stronie. Składa się
                     z czterech głównych części:
                     Content (zawartość) - obszar, w którym znajduje się treść elementu (tekst, obraz itp.)</br>
@@ -196,25 +149,25 @@
                     <figcaption>Źródło: MDN Web Docs - CSS Box Model</figcaption>
                 </figure>
                 </p>
-                <h5>Padding</h5>
+                <h4 class="section__header">Padding</h4>
                 <p>Padding to przestrzeń między zawartością elementu a jego obramowaniem. Można ustawić padding
                     dla wszystkich stron elementu lub osobno dla każdej strony (padding-top, padding-right,
                     padding-bottom, padding-left).</p>
-                <h5>Border</h5>
+                <h4 class="section__header">Border</h4>
                 <p>Border to linia otaczająca element. Można ustawić styl, szerokość i kolor obramowania (np. border:
                     1px solid black;
                     border-top: 2px dashed red;)
                     Border style: none, solid, dashed, dotted, double, groove, ridge, inset, outset<br>
                     Border-radius: zaokrąglenie rogów elementu (np. border-radius: 10px; border-radius: 50%;)
                 </p>
-                <h5>Margin</h5>
+                <h4 class="section__header">Margin</h4>
                 <p>Margin to przestrzeń między obramowaniem elementu a innymi elementami na stronie. Można ustawić
                     margin dla wszystkich stron elementu lub osobno dla każdej strony (margin-top, margin-right,
                     margin-bottom, margin-left).
                     margin auto - automatyczne wyrównanie elementu (np. margin: 0 auto; - centrowanie elementu poziomo)
 
                 </p>
-                <h4 class="note-h4">CSS box-sizing</h4>
+                <h4 class="section__header">CSS box-sizing</h4>
                 <p>Właściwość box-sizing określa, jak przeglądarka oblicza całkowitą szerokość i wysokość elementu.
                     Istnieją dwa główne tryby:
                     content-box (domyślny) - szerokość i wysokość dotyczą tylko zawartości elementu. Padding i
@@ -231,7 +184,7 @@
                     <figcaption>Źródło: MDN Web Docs - CSS box-sizing</figcaption>
                 </figure>
                 </p>
-                <h4 class="note-h4">position</h4>
+                <h4 class="section__header">position</h4>
                 <p>Właściwość position określa, jak element jest pozycjonowany na stronie. Istnieją cztery główne
                     wartości:
                     static (domyślna) - element jest pozycjonowany zgodnie z normalnym przepływem dokumentu</br>
@@ -250,14 +203,14 @@
 
 
                 </p>
-                <h5>przesuwanie elementów absolute:</h5>
+                <h4 class="section__header">przesuwanie elementów absolute:</h4>
                 <ul>
                     <li>top - przesuwa element w dół</li>
                     <li>right - przesuwa element w lewo</li>
                     <li>bottom - przesuwa element w górę</li>
                     <li>left - przesuwa element w prawo</li>
                 </ul>
-                <h5>z-index</h5>
+                <h4 class="section__header">z-index</h4>
                 <p>Właściwość z-index określa kolejność nakładania się elementów pozycjonowanych (relative, absolute,
                     fixed). Elementy z wyższym z-index będą wyświetlane nad elementami z niższym z-index. Domyślna
                     wartość z-index to 0.</p>
@@ -266,9 +219,9 @@
                     MDN Web Docs - dokumentacja i zasoby dla programistów webowych
                 </p>
             </article>
-            <article>
-                <h3 class="note-h3">JavaScript</h3>
-                <img src="Unofficial_JavaScript_logo_2.svg" alt="JavaScript logo">
+            <article class="section__article">
+                <h2 class="section__header">JavaScript</h2>
+                <img src="Unofficial_JavaScript_logo_2.svg" alt="JavaScript logo" height="200px">
                 <p>JavaScript to język programowania używany do tworzenia interaktywnych elementów na stronach
                     internetowych. Pozwala na manipulowanie strukturą HTML i stylami CSS w czasie rzeczywistym, co
                     umożliwia dynamiczne zmiany na stronie bez konieczności jej przeładowywania.</p>
@@ -286,7 +239,7 @@
                             literały - liczby, stringi
 
                 </p>
-                <h4>Zmiennie w JavaScript</h4>
+                <h3 class="section__header">Zmiennie w JavaScript</h3>
                 <p>Zmienne w JavaScript służą do przechowywania danych. Można je deklarować za pomocą słów kluczowych
                     var,
                     let lub const. Różnice między nimi:
@@ -309,8 +262,8 @@
                 </p>
             </article>
 
-            <article id="git-github">
-                <h3 class="note-h3">GIT i GitHub</h3>
+            <article id="git-github" class="section__article">
+                <h2 class="section__header">GIT i GitHub</h2>
                 <p>Git to system kontroli wersji, który pozwala śledzić zmiany w plikach i zarządzać projektem. GitHub
                     to platforma oparta na Git, umożliwiająca współpracę nad projektami oraz hostowanie repozytoriów.
                 </p>
@@ -326,21 +279,21 @@
                     https://docs.github.com/ - dokumentacja GitHub
                 </p>
             </article>
-            <article>
-                <h3 class="note-h3">Nazywanie rzeczy</h3>
+            <article class="section__article">
+                <h2 class="section__header">Nazywanie rzeczy</h2>
                 <ul>
                     <li>Nazywamy bez polskich znaków i spacji</li>
                     <li>Angielskie słowa</li>
                     <li>Trzymamy się jednego schematu</li>
                 </ul>
-                <h4 class="note-h4">Konwencje nazewnictwa</h4>
+                <h3 class="section__header">Konwencje nazewnictwa</h3>
                 <ol>
                     <li>camelCase - pierwsze słowo małą literą, kolejne z dużej (np. mojaZmienna)</li>
                     <li>PascalCase - każde słowo z dużej litery (np. MojaZmienna)</li>
                     <li>snake_case - słowa oddzielone podkreśleniami (np. moja_zmienna)</li>
                     <li>kebab-case - słowa oddzielone myślnikami (np. moja-zmienna)</li>
                 </ol>
-                <h4 class="note-h4">BEM - Block Element Modifier</h4>
+                <h3 class="section__header">BEM - Block Element Modifier</h3>
                 <p>BEM to metodyka nazewnictwa klas CSS, która pomaga tworzyć skalowalne i utrzymywalne style.</p>
                 <ul>
                     <li>Block - niezależny element strony (np. menu, przycisk)</li>
@@ -357,8 +310,8 @@
 
 
             </article>
-            <article>
-                <h3 class="note-h3">Jak działa internet i przeglądrka</h3>
+            <article class="section__article">
+                <h2 class="section__header">Jak działa internet i przeglądrka</h2>
                 <p>Przeglądarka internetowa to oprogramowanie służące do wyświetlania stron internetowych. Pobiera
                     pliki z serwera za pomocą protokołu HTTP/HTTPS i renderuje je na ekranie użytkownika.</p>
                 <p>Podstawowe elementy działania internetu:
@@ -367,7 +320,7 @@
                     Protokół HTTP/HTTPS - zasady komunikacji między klientem a serwerem
                     DNS - system tłumaczący nazwy domen na adresy IP
                 </p>
-                <h4 class="note-h4">Z czego składa się URL</h4>
+                <h3 class="section__header">Z czego składa się URL</h3>
                 <p>URL (Uniform Resource Locator) to adres internetowy składający się z kilku części:
                     Protokół - np. http:// lub https://
                     Domenna - nazwa strony, np. www.przyklad.com
@@ -377,7 +330,7 @@
                     / - root katalog
                     Przykład pełnego URL: https://www.przyklad.com/katalog/plik.html?id=123#sekcja1
                 </p>
-                <h4 class="note-h4">Jak działa przeglądarka internetowa</h4>
+                <h3 class="section__header">Jak działa przeglądarka internetowa</h3>
                 <p>Przeglądarka internetowa działa w kilku etapach:
                     1. Wpisuje się adres URL w pasek adresu.
                     2. Przeglądarka szykad adres IP serwera za pomocą DNS.
@@ -385,7 +338,7 @@
                     4. Serwer odpowiada, przesyłając pliki HTML, CSS i JavaScript.
                     5. Przeglądarka analizuje kod HTML i CSS, a następnie renderuje stronę na ekranie użytkownika.
                 </p>
-                <h4 class="note-h4">Kody odpowiedzi HTTP</h4>
+                <h3 class="section__header">Kody odpowiedzi HTTP</h3>
                 <p>Kody odpowiedzi HTTP są trzycyfrowymi kodami, które serwer wysyła do przeglądarki w celu informowania
                     o stanie zapytania:
                     1XX - Informational - informacja o przetwarzaniu zapytania
@@ -397,7 +350,7 @@
                     404 - Not Found - strona nie została znaleziona
                     50X - Internal Server Error - błąd wewnętrzny serwera
                 </p>
-                <h4 class="note-h4">Czym jest root? Ścieżki względne i bezwzględne</h4>
+                <h3 class="section__header">Czym jest root? Ścieżki względne i bezwzględne</h3>
                 <p>Root (główny katalog) to katalog główny systemu plików. W kontekście internetu, root to katalog
                     główny serwera WWW.
                     Ścieżki bezwzględne zaczynają się od znaku "/", np. /katalog/plik.html.
@@ -405,11 +358,11 @@
                 </p>
 
             </article>
-            <article>
-                <h3 class="note-h3">Terminal linuksowy</h3>
+            <article class="section__article">
+                <h2 class="section__header">Terminal linuksowy</h2>
                 <p>Terminal to interfejs tekstowy do komunikacji z systemem operacyjnym. W systemach Linux i macOS można
                     go otworzyć za pomocą skrótu Ctrl+Alt+T.</p>
-                <h4 class="note-h4">Podstawowe komendy terminala</h4>
+                <h3 class="section__header">Podstawowe komendy terminala</h3>
                 <ul>
                     <li>ls - lista plików i katalogów w bieżącym katalogu</li>
                     <li>cd - zmiana katalogu (np. cd katalog cd .. katalog wyżej, cd ~ katalog domowy)</li>
@@ -425,8 +378,8 @@
                     <li>code . - otwiera edytor kodu VS Code w bieżącym katalogu</li>
                 </ul>
             </article>
-            <article>
-                <h3 class="note-h3">Normalizacja vs reset</h3>
+            <article class="section__article">
+                <h2 class="section__header">Normalizacja vs reset</h2>
                 <p>Normalizacja i reset to techniki stosowane w CSS w celu zapewnienia spójności wyglądu stron
                     internetowych
                     na różnych przeglądarkach. Normalizacja (normalize.css) to zbiór reguł CSS, które mają na celu
@@ -434,7 +387,7 @@
                     bardziej drastyczne podejście, które usuwa wszystkie domyślne style przeglądarek, co może prowadzić
                     do
                     konieczności ponownego definiowania wielu stylów od podstaw.</p>
-                <h4 class="note-h4">normalize.css</h4>
+                <h3 class="section__header">normalize.css</h3>
                 <p>normalize.css to popularna biblioteka CSS, która ma na celu ujednolicenie domyślnych stylów
                     przeglądarek, zachowując jednocześnie pewne różnice. Normalizacja jest mniej drastyczna niż reset,
                     ponieważ nie usuwa wszystkich domyślnych stylów, ale raczej je dostosowuje, aby były bardziej
@@ -445,13 +398,13 @@
                     domyślnych stylów, które mogą być przydatne, jednocześnie eliminując różnice między przeglądarkami,
                     co może prowadzić do mniejszej ilości kodu CSS, który trzeba napisać, aby osiągnąć pożądany wygląd
                     strony.<a href="https://necolas.github.io/normalize.css/">Normalizacja CSS</a>
-                    <figure>
-                        <img src="boxsizing.png" alt="normalize.css">
-                        <figcaption>Źródło: MDN Web Docs - normalize.css</figcaption>
-                    </figure>
+                <figure>
+                    <img src="boxsizing.png" alt="normalize.css">
+                    <figcaption>Źródło: MDN Web Docs - normalize.css</figcaption>
+                </figure>
 
                 </p>
-                <h4 class="note-h4">reset.css</h4>
+                <h3 class="section__header">reset.css</h3>
                 <p>Reset CSS to technika, która usuwa wszystkie domyślne style przeglądarek, co może prowadzić do
                     konieczności ponownego definiowania wielu stylów od podstaw. Reset CSS jest bardziej drastyczny niż
                     normalizacja, ponieważ całkowicie usuwa domyślne style, co może być czasochłonne i wymagać więcej
@@ -462,7 +415,7 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="footer">
         <p>Strona stworzona przez Dawida Kumora <a href="#top">Wróć do góry</a> </p>
     </footer>
 </body>
