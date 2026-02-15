@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navigation">
 
             <li><a class="navigation__link" href="index.html">Strona główna</a></li>
@@ -34,7 +34,7 @@
                     Znaczniki HTML
                     definiują strukturę treści na stronie, np. nagłówki, paragrafy, linki, obrazy itp.</p>
                 <p>main - element główny dokumentu HTML
-                <ul>
+                <ul class="section__list">
                     <li>section - sekcja lub rozdział w dokumencie</li>
                     <li>article - samodzielna część treści, np. wpis na blogu</li>
                     <li>header - nagłówek sekcji lub dokumentu</li>
@@ -56,12 +56,55 @@
                     <li>class - klasa elementu</li>
                     <li>nav - element zawierający nawigację</li>
                     <li>div - element ogólnego przeznaczenia do grupowania innych elementów</li>
+                    <li>dl - lista definicji (np. <dl>
+                            <dt>HTML</dt>
+                            <dd>HyperText Markup Language</dd>
+                        </dl>)</li>
+                    <li>table - element do tworzenia tabel</li>
+                    <li>tr - wiersz tabeli</li>
+                    <li>td - komórka tabeli</li>
+                    <li>th - nagłówek tabeli(komórka)</li>
+                    <li>thead - nagłówek tabeli</li>
+                    <li>tbody - ciało tabeli</li>
+                    <li>tfoot - stopka tabeli</li>
+                    <li>caption - podpis tabeli</li>
                 </ul>
                 </p>
                 <p>W3C - specyfikacja HTML,
                     validator.w3.org - narzędzie do sprawdzania poprawności kodu HTML
                     MDN Web Docs - dokumentacja i zasoby dla programistów webowych
                 </p>
+                <article class="section__article">
+                    <h3>Przykład Tabeli</h3>
+                    <table class="section__table">
+                        <caption>Przykładowa tabela</caption>
+                        <thead>
+                            <tr>
+                                <th>Nagłówek 1</th>
+                                <th>Nagłówek 2</th>
+                                <th>Nagłówek 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Komórka 1</td>
+                                <td>Komórka 2</td>
+                                <td>Komórka 3</td>
+                            </tr>
+                            <tr>
+                                <td>Komórka 4</td>
+                                <td>Komórka 5</td>
+                                <td>Komórka 6</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Stopka tabeli</td>
+                            </tr>
+                        </tfoot>
+                </table>
+                </article>
+
                 <article class="section__article">
                     <h2 class="section__header">Komentarze w kodzie</h2>
                     <p>HTML: &lt;!-- Komentarz w HTML --&gt;</p>
@@ -73,7 +116,7 @@
             </article>
             <article class="section__article">
                 <h2 class="section__header">CSS</h2>
-                <img src="Official_CSS_Logo.svg.png" alt="CSS logo" height ="200px">
+                <img src="Official_CSS_Logo.svg.png" alt="CSS logo" height="200px">
                 <p>CSS (Cascading Style Sheets) to język stylów używany do opisywania wyglądu i formatowania dokumentów
                     HTML.
                     CSS pozwala na oddzielenie treści od prezentacji, umożliwiając kontrolę nad kolorami, czcionkami,
@@ -214,6 +257,35 @@
                 <p>Właściwość z-index określa kolejność nakładania się elementów pozycjonowanych (relative, absolute,
                     fixed). Elementy z wyższym z-index będą wyświetlane nad elementami z niższym z-index. Domyślna
                     wartość z-index to 0.</p>
+                <h4 class="section__header">CSS typografia</h4>
+                <p>Właściwości typograficzne w CSS pozwalają na kontrolę nad wyglądem tekstu na stronie. Oto kilka
+                    podstawowych właściwości typograficznych:
+                <ul>
+                    <li>font-family - określa rodzinę czcionek (np. font-family: Arial, sans-serif;)</li>
+                    <li>font-size - określa rozmiar czcionki (np. font-size: 16px;)</li>
+                    <li>font-weight - określa grubość czcionki (np. font-weight: normal; font-weight: bold;)</li>
+                    <li>line-height - określa wysokość linii (np. line-height: 1.5;)</li>
+                    <li>text-align - określa wyrównanie tekstu (np. text-align: left; text-align: center; text-align:
+                        right;)</li>
+                    <li>text-decoration - określa dekorację tekstu (np. text-decoration: none; text-decoration:
+                        underline;)</li>
+                    <li>color - określa kolor tekstu (np. color: #333333;)</li>
+                    <li>text-transform - określa transformację tekstu (np. text-transform: uppercase; text-transform:
+                        lowercase;)</li>
+                    <li>letter-spacing - określa odstępy między literami (np. letter-spacing: 2px;) </li>
+                    <li>word-spacing - określa odstępy między słowami (np. word-spacing: 4px;)</li>
+                    span - element inline, który można użyć do stylowania części tekstu bez wpływu na resztę tekstu</li>
+                </ul>
+                rem - jednostka względna względem rozmiaru czcionki elementu root (html). Używanie rem pozwala na łatwe
+                skalowanie tekstu na całej stronie, ponieważ zmiana rozmiaru czcionki w elemencie root automatycznie
+                dostosowuje rozmiar tekstu we wszystkich elementach używających rem.<br>
+                em - jednostka względna względem rozmiaru czcionki rodzica. Używanie em pozwala na tworzenie
+                elastycznych i skalowalnych układów, ponieważ rozmiar tekstu jest dostosowywany do rozmiaru czcionki
+                elementu nadrzędnego. Jednak używanie em może prowadzić do nieoczekiwanych rezultatów, jeśli
+                zagnieżdżone elementy mają różne rozmiary czcionek, ponieważ em jest obliczany względem rozmiaru
+                czcionki rodzica, co może prowadzić do kaskadowych efektów skalowania. wzór: font-size: 2em; (jeśli
+                rodzic ma font-size: 16px, to element z font-size: 2em będzie miał font-size: 32px)</p>
+                </p>
                 <p>Źródła:
                     CSS-Tricks - poradniki i artykuły o CSS
                     MDN Web Docs - dokumentacja i zasoby dla programistów webowych
@@ -259,6 +331,25 @@
                     object - struktury danych przechowujące właściwości i metody (np. {name: "Alice", age: 30})
                     <strong>type of</strong> - operator zwracający typ danych (np. typeof 42 // "number", typeof "Hello"
                     // "string")
+                </p>
+                <h3 class="section__header">DOM</h3>
+                <p>DOM (Document Object Model) to interfejs programistyczny dla dokumentów HTML i XML. Pozwala na
+                    manipulowanie strukturą, stylem i treścią strony internetowej za pomocą JavaScript.</p>
+                <p>Podstawowe metody manipulacji DOM:
+                <ol>
+                    <li>document.getElementById() - pobiera element o określonym id</li>
+                    <li>document.getElementsByClassName() - pobiera elementy o określonej klasie</li>
+                    <li>document.getElementsByTagName() - pobiera elementy o określonym tagu</li>
+                    <li>document.querySelector() - pobiera pierwszy element pasujący do selektora CSS</li>
+                    <li>document.querySelectorAll() - pobiera wszystkie elementy pasujące do selektora CSS</li>
+                    <li>element.innerHTML - zmienia zawartość HTML elementu</li>
+                    <li>element.style - zmienia style CSS elementu</li>
+                    <li>element.classList - zarządza klasami elementu (add, remove, toggle)</li>
+                    <li>element.setAttribute() - ustawia atrybut elementu</li>
+                    <li>element.getAttribute() - pobiera wartość atrybutu elementu</li>
+                    <li>element.addEventListener() - dodaje nasłuchiwanie zdarzeń do elementu</li>
+                    <li>element.removeEventListener() - usuwa nasłuchiwanie zdarzeń z elementu</li>
+                </ol>
                 </p>
             </article>
 
@@ -363,7 +454,7 @@
                 <p>Terminal to interfejs tekstowy do komunikacji z systemem operacyjnym. W systemach Linux i macOS można
                     go otworzyć za pomocą skrótu Ctrl+Alt+T.</p>
                 <h3 class="section__header">Podstawowe komendy terminala</h3>
-                <ul>
+                <ul class="section__list">
                     <li>ls - lista plików i katalogów w bieżącym katalogu</li>
                     <li>cd - zmiana katalogu (np. cd katalog cd .. katalog wyżej, cd ~ katalog domowy)</li>
                     <li>pwd - pokazuje aktualny katalog roboczy</li>
@@ -377,6 +468,19 @@
                     <li>clear - czyści ekran terminala</li>
                     <li>code . - otwiera edytor kodu VS Code w bieżącym katalogu</li>
                 </ul>
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">Debugging - odrobaczanie</h2>
+                <p>Debugging to proces identyfikowania i usuwania błędów w kodzie. W JavaScript można użyć narzędzi
+                    deweloperskich w przeglądarce (np. Chrome DevTools) do debugowania kodu.</p>
+                <p>Podstawowe techniki debugowania:
+                    console.log() - wyświetla informacje w konsoli przeglądarki
+                    debugger - zatrzymuje wykonywanie kodu w miejscu, gdzie jest umieszczony
+                    breakpoints - punkty przerwania, które pozwalają na zatrzymanie wykonywania kodu w określonych
+                    miejscach
+                    watch expressions - obserwowanie wartości zmiennych podczas debugowania
+                    call stack - stos wywołań, który pokazuje, jakie funkcje zostały wywołane i w jakiej kolejności
+                </p>
             </article>
             <article class="section__article">
                 <h2 class="section__header">Normalizacja vs reset</h2>
@@ -416,8 +520,10 @@
 
     </main>
     <footer class="footer">
-        <p>Strona stworzona przez Dawida Kumora <a href="#top">Wróć do góry</a> </p>
+        <p class="footer__text">Strona stworzona przez Dawida Kumora <a class="footer__link" href="#top">Wróć do
+                góry</a> </p>
     </footer>
+    <script defer src="main.js"></script>
 </body>
 
 </html>

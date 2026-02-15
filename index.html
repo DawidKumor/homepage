@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header>
+	<header class="header">
 		<nav class="navigation">
 
 			<a class="navigation__link" href="index.html">Strona główna</a>
@@ -19,14 +19,15 @@
 		</nav>
 	</header>
 	<main>
-		<header id="top">
-			<h1>Dawid Kumor - Strona domowa</h1>
+		<header id="top" class="page-header">
+			<h1 class="page-header__heading page-header__heading--js ">Dawid Kumor - Strona domowa</h1>
+			<h2 class="page-header__subheading page-header__subheading--js">Inżynier automatyki i robotyki</h2>
 		</header>
 		<section class="section">
 			<div class="section__article">
 				<h2 class="section__header">O mnie</h2>
 				<figure>
-					<img src="Bez-tytułu.png" alt="Zdjęcie Dawida Kumora">
+					<img class="section__image" src="Bez-tytułu.png" alt="Zdjęcie Dawida Kumora">
 					<figcaption>Zdjęcie Dawida Kumora</figcaption>
 				</figure>
 				<p>Nazywam się Dawid Kumor i od ponad dekady pracuję w branży technicznej, rozwijając swoje umiejętności
@@ -162,10 +163,10 @@
 		</section>
 
 	</main>
-	<footer>
-		<p>Strona stworzona przez Dawida Kumora <a href="#top">Wróć do góry</a> </p>
+	<footer class="footer">
+		<p class="footer__text">Strona stworzona przez Dawida Kumora <a class="footer__link"href="#top">Wróć do góry</a> </p>
 	</footer>
-	<script src="main.js"></script>
+	<script defer src="main.js"></script>
 
 </body>
 
