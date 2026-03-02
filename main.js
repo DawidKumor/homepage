@@ -6,7 +6,7 @@ const header = document.querySelector(`h1`);
 console.log(header);
 header.innerHTML = "Jebać pis i konederacje";
 console.log(header.style)
-header.style.color = "orange";
+header.style.color = "pink";
 header.style.fontSize = "3rem";
 header.style.textTransform = "uppercase";
 header.style.textAlign = "center";
@@ -31,3 +31,7 @@ const deathStar = {
 }
 console.log(deathStar.name);
 deathStar.fire("Alderaan");
+const fName = "Edward";
+const lName = "Norton";
+const fullName = `${fName} ${lName}`;
+console.log(`Hello, this is ${fullName} in the ship!`);

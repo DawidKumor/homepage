@@ -14,11 +14,8 @@ html {
 }
 
 .navigation {
-	background: lightblue;
-	padding: 20px;
-	max-width: 800px;
-	min-width: 100px;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 
 }
 
@@ -37,12 +34,13 @@ html {
 .section {
 	padding: 16px;
 	color: whitesmoke;
-	background: darkgrey;
+	background: #22C1C3;
+	background: radial-gradient(circle, rgba(34, 193, 195, 0.64) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .section__article {
 	margin-bottom: 16px;
-	background: grey;
+	background: green;
 	padding: 16px;
 	border-radius: 32px;
 }
@@ -52,8 +50,9 @@ html {
 	display: block;
 	border-radius: 16px;
 }
+
 .section__list {
-		list-style-type: circle;
+	list-style-type: circle;
 }
 
 main {
@@ -90,11 +89,15 @@ body {
 	font-family: Arial, sans-serif;
 	font-weight: 400;
 	line-height: 1.6;
+	background: #22C1C3;
+	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
+
 .section__table {
 	width: 100%;
 	text-align: center;
 }
+
 .section__table caption {
 	margin-bottom: 2rem;
 }
