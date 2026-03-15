@@ -35,3 +35,8 @@ const fName = "Edward";
 const lName = "Norton";
 const fullName = `${fName} ${lName}`;
 console.log(`Hello, this is ${fullName} in the ship!`);
+
+const greet = (name, age) => {
+    return `Hello, my name is ${name} and I am ${age} years old.`;
+}
+console.log(greet("Dawid", 32));
