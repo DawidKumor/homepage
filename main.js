@@ -12,11 +12,13 @@ header.style.textTransform = "uppercase";
 header.style.textAlign = "center";
 header.style.textShadow = "2px 2px 4px rgba(0, 0, 0, 0.5)";
 const header2 = document.querySelector(`.page-header__subheading--js`);
+if (header2) {
 header2.style.color = "blue";
 header2.style.fontSize = "2rem";
 header2.style.textAlign = "center";
 header2.style.textShadow = "1px 1px 3px rgba(0, 0, 0, 0.3)";    
 header2.innerHTML = "Inżynier automatyki i robotyki z akademii tańca i chumoru";
+}
 const deathStar = {
     diameter: 120000,
     fire: (target) => { console.log(`${target} destroyed!`) },
@@ -42,9 +44,18 @@ const greet = (name, age) => {
 console.log(greet("Dawid", 32));
 
 const button = document.querySelector('.page-header__button--js')
-
+if (button) {
+button.classList.add('testowa-klasa');
+console.log(button.classList);
 const clickFunction = (e) => {
     const header = document.querySelector('.page-header__heading--js');
     header.innerHTML = "click click clack symphony";
 }
 button.addEventListener('click', clickFunction)
+}
+const hamburger = document.querySelector('.hamburger--js');
+hamburger.addEventListener('click', () => {
+const navigation = document.querySelector('.navigation--js');
+navigation.classList.toggle('navigation--open');
+})
+
