@@ -84,6 +84,15 @@ main {
 	background: lightblue;
 	font-size: 10px;
 }
+.page-header__button {
+	background: blueviolet;
+	color: whitesmoke;
+	font-weight: 700;
+	border: 0;
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
 
 body {
 	font-family: Arial, sans-serif;

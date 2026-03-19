@@ -35,3 +35,11 @@ const fName = "Edward";
 const lName = "Norton";
 const fullName = `${fName} ${lName}`;
 console.log(`Hello, this is ${fullName} in the ship!`);
+
+const button = document.querySelector('.page-header__button--js')
+
+const clickFunction = (e) => {
+    const header = document.querySelector('.page-header__heading--js');
+    header.innerHTML = "click click clack symphony";
+}
+button.addEventListener('click', clickFunction)
