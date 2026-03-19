@@ -1,0 +1,1 @@
+console.log("nudny dzień dzisiaj/n i jutro.")
