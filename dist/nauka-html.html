@@ -1,0 +1,560 @@
+<!DOCTYPE html><html lang="pl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Dawid Kumor</title>
+    <link href="/homepage.fe8261f8.css" rel="stylesheet" type="text/css">
+    <link href="/homepage.2cdaf7bc.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+		<nav class="navigation navigation--js">
+
+			<a class="navigation__link" href="/index.html">Strona główna</a>
+			<a class="navigation__link" href="/nauka-html.html">Notatki z nauki HTML i CSS</a>
+			<a class="navigation__link" href="#">Facebook</a>
+			<a class="navigation__link" href="#">Instagram</a>
+			<a class="navigation__link" href="#">LinkedIn</a>
+			<a class="navigation__link" href="#">mail</a>
+			<a class="navigation__link" href="#">twitter</a>
+
+		</nav>
+		<button class="hamburger hamburger--js" aria-label="Otwórz menu">Menu</button>
+	</header>
+    <main>
+        <header id="top">
+            <h1>Notatki z nauki HTML i CSS</h1>
+        </header>
+
+        <section class="section">
+
+
+            <article class="section__article">
+                <h2 class="section__header">HTML</h2>
+                <img src="/html.a9a21ab5.webp" alt="HTML logo" height="200px">
+                <p><strong>HTML (HyperText Markup Language)</strong> to język znaczników używany do tworzenia stron
+                    internetowych.
+                    Znaczniki HTML
+                    definiują strukturę treści na stronie, np. nagłówki, paragrafy, linki, obrazy itp.</p>
+                <p>main - element główny dokumentu HTML
+                </p><ul class="section__list">
+                    <li>section - sekcja lub rozdział w dokumencie</li>
+                    <li>article - samodzielna część treści, np. wpis na blogu</li>
+                    <li>header - nagłówek sekcji lub dokumentu</li>
+                    <li>h1, h2, h3 - nagłówki o różnych poziomach ważności</li>
+                    <li>p - paragraf tekstu</li>
+                    <li>footer - stopka dokumentu lub sekcji</li>
+                    <li>br - łamanie linii</li>
+                    <li>b - pogrubienie tekstu</li>
+                    <li>i - kursywa tekstu</li>
+                    <li>u - podkreślenie tekstu</li>
+                    <li>strong - wyróżnienie ważnego tekstu</li>
+                    <li>em - wyróżnienie tekstu (np. kursywa) może oznaczać ironie</li>
+                    <li> b i i i u nie mają znaczenia semantycznego. Tylko wyróżnianie fragmentu tekstu. Tego już nie
+                        robimy. Robimy to w stylach. </li>
+                    <li>strong i em mają znaczenie semantyczne</li>
+                    <li>a - link do innej strony lub miejsca w tej samej stronie</li>
+                    <li>img - wstawienie obrazu</li>
+                    <li>id - identyfikator elementu</li>
+                    <li>class - klasa elementu</li>
+                    <li>nav - element zawierający nawigację</li>
+                    <li>div - element ogólnego przeznaczenia do grupowania innych elementów</li>
+                    <li>dl - lista definicji (np. <dl>
+                            <dt>HTML</dt>
+                            <dd>HyperText Markup Language</dd>
+                        </dl>)</li>
+                    <li>table - element do tworzenia tabel</li>
+                    <li>tr - wiersz tabeli</li>
+                    <li>td - komórka tabeli</li>
+                    <li>th - nagłówek tabeli(komórka)</li>
+                    <li>thead - nagłówek tabeli</li>
+                    <li>tbody - ciało tabeli</li>
+                    <li>tfoot - stopka tabeli</li>
+                    <li>caption - podpis tabeli</li>
+                </ul>
+                <p></p>
+                <p>W3C - specyfikacja HTML,
+                    validator.w3.org - narzędzie do sprawdzania poprawności kodu HTML
+                    MDN Web Docs - dokumentacja i zasoby dla programistów webowych
+                </p>
+                <article class="section__article">
+                    <h3>Przykład Tabeli</h3>
+                    <table class="section__table">
+                        <caption>Przykładowa tabela</caption>
+                        <thead>
+                            <tr>
+                                <th>Nagłówek 1</th>
+                                <th>Nagłówek 2</th>
+                                <th>Nagłówek 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Komórka 1</td>
+                                <td>Komórka 2</td>
+                                <td>Komórka 3</td>
+                            </tr>
+                            <tr>
+                                <td>Komórka 4</td>
+                                <td>Komórka 5</td>
+                                <td>Komórka 6</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Stopka tabeli</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+
+                <article class="section__article">
+                    <h2 class="section__header">Komentarze w kodzie</h2>
+                    <p>HTML: &lt;!-- Komentarz w HTML --&gt;</p>
+                    <p>CSS: /* Komentarz w CSS */</p>
+                    <p>JavaScript: // Komentarz jednoliniowy
+                        /* Komentarz wieloliniowy */
+                    </p>
+                </article>
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">CSS</h2>
+                <img src="/Official_CSS_Logo.svg.7ddb569d.png" alt="CSS logo" height="200px">
+                <p>CSS (Cascading Style Sheets) to język stylów używany do opisywania wyglądu i formatowania dokumentów
+                    HTML.
+                    CSS pozwala na oddzielenie treści od prezentacji, umożliwiając kontrolę nad kolorami, czcionkami,
+                    układem i
+                    innymi aspektami wizualnymi strony.</p>
+                <p>składnia selektora "{
+                    właściwość: wartość;
+                    }"</p>
+                <p>Typy selektorów:
+                    Selektory elementów (np. p, h1)
+                    Selektory klas (np. .nazwa-klasy)
+                    Selektory identyfikatorów (np. #nazwa-id)
+                    Selektory atrybutów (np. [type="text"])
+                    #id - selektor identyfikatora
+                    .class - selektor klasy
+                    element - selektor elementu
+                </p>
+                <p>Właściwości CSS:
+                    color - kolor tekstu
+                    background-color - kolor tła
+                    font-size - rozmiar czcionki
+                    margin - marginesy zewnętrzne
+                    padding - odstępy wewnętrzne
+                    border - obramowanie
+                </p>
+                <h3 class="section__header">CSS display</h3>
+                <p>
+                </p><ul>
+                    <li>display: block - element blokowy</li>
+                    <li>display: inline - element liniowy</li>
+                    <li>display: inline-block - element liniowy z możliwością ustawiania szerokości i wysokości</li>
+                    <li>width - szerokość elementu</li>
+                    <li>height - wysokość elementu</li>
+                    <li>box-sizing: content-box - domyślny model pudełkowy (szerokość i wysokość dotyczą tylko
+                        zawartości)
+                        box-sizing: border-box - szerokość i wysokość obejmują zawartość, padding i border</li>
+                    <li>max-width - maksymalna szerokość elementu</li>
+                    <li>max-height - maksymalna wysokość elementu</li>
+                    <li>min-width - minimalna szerokość elementu</li>
+                    <li>min-height - minimalna wysokość elementu</li>
+                </ul>
+                <p></p>
+                <p>
+                </p><ol>
+                    <li>overflow: visible - zawartość wychodzi poza element</li>
+                    <li>overflow: hidden - zawartość jest przycinana</li>
+                    <li>overflow: scroll - pojawiają się paski przewijania</li>
+                    <li>overflow: auto - paski przewijania pojawiają się tylko wtedy, gdy są potrzebne</li>
+                    <li>overflow: clip - przycinanie zawartości do obszaru elementu</li>
+                </ol>
+                <p></p>
+                <p>
+                </p><h3 class="section__header">CSS jednostki</h3>
+                <ul>
+                    <li>px - piksele (stała jednostka)</li>
+                    <li>em - jednostka względna względem rozmiaru czcionki rodzica</li>
+                    <li>rem - jednostka względna względem rozmiaru czcionki elementu root (html)</li>
+                    <li>% - procenty względem elementu rodzica</li>
+                    <li>vh - procent wysokości widoku przeglądarki (1vh = 1% wysokości widoku)</li>
+                    <li>vw - procent szerokości widoku przeglądarki (1vw = 1% szerokości widoku)</li>
+                </ul>
+                <p></p>
+                <p>
+                </p><h3 class="section__header">CSS Box Model</h3>
+                <p>Model pudełkowy CSS opisuje sposób, w jaki przeglądarka renderuje elementy na stronie. Składa się
+                    z czterech głównych części:
+                    Content (zawartość) - obszar, w którym znajduje się treść elementu (tekst, obraz itp.)<br>
+                    Padding (wypełnienie) - przestrzeń między zawartością a obramowaniem elementu<br>
+                    Border (obramowanie) - linia otaczająca element<br>
+                    Margin (margines) - przestrzeń między obramowaniem elementu a innymi elementami na stronie<br>
+                </p><figure>
+                    <img src="/box-model.58cebce7.png" alt="CSS Box Model">
+                    <figcaption>Źródło: MDN Web Docs - CSS Box Model</figcaption>
+                </figure>
+                <p></p>
+                <h4 class="section__header">Padding</h4>
+                <p>Padding to przestrzeń między zawartością elementu a jego obramowaniem. Można ustawić padding
+                    dla wszystkich stron elementu lub osobno dla każdej strony (padding-top, padding-right,
+                    padding-bottom, padding-left).</p>
+                <h4 class="section__header">Border</h4>
+                <p>Border to linia otaczająca element. Można ustawić styl, szerokość i kolor obramowania (np. border:
+                    1px solid black;
+                    border-top: 2px dashed red;)
+                    Border style: none, solid, dashed, dotted, double, groove, ridge, inset, outset<br>
+                    Border-radius: zaokrąglenie rogów elementu (np. border-radius: 10px; border-radius: 50%;)
+                </p>
+                <h4 class="section__header">Margin</h4>
+                <p>Margin to przestrzeń między obramowaniem elementu a innymi elementami na stronie. Można ustawić
+                    margin dla wszystkich stron elementu lub osobno dla każdej strony (margin-top, margin-right,
+                    margin-bottom, margin-left).
+                    margin auto - automatyczne wyrównanie elementu (np. margin: 0 auto; - centrowanie elementu poziomo)
+
+                </p>
+                <h4 class="section__header">CSS box-sizing</h4>
+                <p>Właściwość box-sizing określa, jak przeglądarka oblicza całkowitą szerokość i wysokość elementu.
+                    Istnieją dwa główne tryby:
+                    content-box (domyślny) - szerokość i wysokość dotyczą tylko zawartości elementu. Padding i
+                    border są dodawane do tych wartości, co może prowadzić do większych rozmiarów elementu niż
+                    oczekiwano.
+                    border-box - szerokość i wysokość obejmują zawartość, padding i border. Oznacza to, że jeśli
+                    ustawisz szerokość na 100px, to całkowita szerokość elementu pozostanie 100px, niezależnie
+                    od wartości padding i border.
+                    deklaracja box-sizing: border-box jest często używana, ponieważ ułatwia kontrolę nad rozmiarami
+                    elementów i
+                    zapobiega nieoczekiwanym rozmiarom spowodowanym przez padding i border.
+                </p><figure>
+                    <img src="/content-box.f0bcd910.png" alt="CSS box-sizing">
+                    <figcaption>Źródło: MDN Web Docs - CSS box-sizing</figcaption>
+                </figure>
+                <p></p>
+                <h4 class="section__header">position</h4>
+                <p>Właściwość position określa, jak element jest pozycjonowany na stronie. Istnieją cztery główne
+                    wartości:
+                    static (domyślna) - element jest pozycjonowany zgodnie z normalnym przepływem dokumentu<br>
+                    relative - element jest pozycjonowany względem swojej normalnej pozycji. Można użyć właściwości
+                    top, right, bottom, left do przesunięcia elementu względem jego normalnej pozycji<br>
+                    absolute - element jest pozycjonowany względem najbliższego przodka o pozycji relative lub
+                    absolute. Jeśli nie ma takiego przodka, element jest pozycjonowany względem okna przeglądarki<br>
+                    fixed - element jest pozycjonowany względem okna przeglądarki i pozostaje w tej samej pozycji
+                    nawet podczas przewijania strony<br>
+                    sticky - element jest pozycjonowany względnie do swojego normalnego położenia, ale staje się fixed,
+                    gdy osiąga określony punkt podczas przewijania strony<br>
+                    float - element jest pozycjonowany na lewo lub prawo, a tekst i inne elementy opływają go. Teraz
+                    raczej się nie używa ale dobry do obrazków.<br>
+                    clear - właściwość używana w połączeniu z float, aby zapobiec opływaniu elementów (np. clear: both;
+                    clear: left; clear: right;)
+
+
+                </p>
+                <h4 class="section__header">przesuwanie elementów absolute:</h4>
+                <ul>
+                    <li>top - przesuwa element w dół</li>
+                    <li>right - przesuwa element w lewo</li>
+                    <li>bottom - przesuwa element w górę</li>
+                    <li>left - przesuwa element w prawo</li>
+                </ul>
+                <h4 class="section__header">z-index</h4>
+                <p>Właściwość z-index określa kolejność nakładania się elementów pozycjonowanych (relative, absolute,
+                    fixed). Elementy z wyższym z-index będą wyświetlane nad elementami z niższym z-index. Domyślna
+                    wartość z-index to 0.</p>
+                <h4 class="section__header">CSS typografia</h4>
+                <p>Właściwości typograficzne w CSS pozwalają na kontrolę nad wyglądem tekstu na stronie. Oto kilka
+                    podstawowych właściwości typograficznych:
+                </p><ul>
+                    <li>font-family - określa rodzinę czcionek (np. font-family: Arial, sans-serif;)</li>
+                    <li>font-size - określa rozmiar czcionki (np. font-size: 16px;)</li>
+                    <li>font-weight - określa grubość czcionki (np. font-weight: normal; font-weight: bold;)</li>
+                    <li>line-height - określa wysokość linii (np. line-height: 1.5;)</li>
+                    <li>text-align - określa wyrównanie tekstu (np. text-align: left; text-align: center; text-align:
+                        right;)</li>
+                    <li>text-decoration - określa dekorację tekstu (np. text-decoration: none; text-decoration:
+                        underline;)</li>
+                    <li>color - określa kolor tekstu (np. color: #333333;)</li>
+                    <li>text-transform - określa transformację tekstu (np. text-transform: uppercase; text-transform:
+                        lowercase;)</li>
+                    <li>letter-spacing - określa odstępy między literami (np. letter-spacing: 2px;) </li>
+                    <li>word-spacing - określa odstępy między słowami (np. word-spacing: 4px;)</li>
+                    span - element inline, który można użyć do stylowania części tekstu bez wpływu na resztę tekstu
+                </ul>
+                rem - jednostka względna względem rozmiaru czcionki elementu root (html). Używanie rem pozwala na łatwe
+                skalowanie tekstu na całej stronie, ponieważ zmiana rozmiaru czcionki w elemencie root automatycznie
+                dostosowuje rozmiar tekstu we wszystkich elementach używających rem.<br>
+                em - jednostka względna względem rozmiaru czcionki rodzica. Używanie em pozwala na tworzenie
+                elastycznych i skalowalnych układów, ponieważ rozmiar tekstu jest dostosowywany do rozmiaru czcionki
+                elementu nadrzędnego. Jednak używanie em może prowadzić do nieoczekiwanych rezultatów, jeśli
+                zagnieżdżone elementy mają różne rozmiary czcionek, ponieważ em jest obliczany względem rozmiaru
+                czcionki rodzica, co może prowadzić do kaskadowych efektów skalowania. wzór: font-size: 2em; (jeśli
+                rodzic ma font-size: 16px, to element z font-size: 2em będzie miał font-size: 32px)<p></p>
+                <p></p>
+
+                <h3 class="section__header">CSS: flexbox</h3>
+                <p>flexbox to moduł CSS, który pozwala na tworzenie elastycznych i responsywnych układów. Flexbox
+                    umożliwia
+                    łatwe rozmieszczanie, wyrównywanie i rozdzielanie przestrzeni między elementami w kontenerze.</p>
+                <p>Podstawowe właściwości flexbox:
+                </p><ul class="section__list">
+                    <li>display: flex - definiuje kontener flex</li>
+                    <li>flex-direction - określa kierunek osi głównej (row, column, row-reverse, column-reverse)
+                    </li>
+                    <li>justify-content - wyrównuje elementy wzdłuż osi głównej (flex-start, flex-end, center,
+                        space-between,
+                        space-around)</li>
+                    <li>align-items - wyrównuje elementy wzdłuż osi poprzecznej (flex-start, flex-end, center, baseline,
+                        stretch)</li>
+                    <li>align-content - wyrównuje linie flex w kontenerze (flex-start, flex-end, center, space-between,
+                        space-around, stretch)</li>
+                    <li>align-self - wyrównuje pojedynczy element flex w kontenerze (auto, flex-start, flex-end, center,
+                        baseline, stretch)</li>
+                    <li>flex-wrap - określa, czy elementy mają zawijać się do nowego wiersza (nowrap, wrap,
+                        wrap-reverse)</li>
+                        <li>flex-grow - określa, jak bardzo element ma się rozciągać w kontenerze flex</li>
+                        <li>flex-shrink - określa, jak bardzo element ma się kurczyć w kontenerze flex</li>
+                        <li>flex-basis - określa początkową wielkość elementu flex</li>
+                        <li>order - określa kolejność elementów flex w kontenerze (domyślnie 0)</li>
+                        <li>gap, row-gap, column-gap - określa odstęp między elementami flex (np. gap: 10px;)</li>
+
+                </ul>
+                <p>Źródła:
+                    CSS-Tricks - poradniki i artykuły o CSS
+                    MDN Web Docs - dokumentacja i zasoby dla programistów webowych
+                </p>
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">JavaScript</h2>
+                <img src="/Unofficial_JavaScript_logo_2.cb01c0d0.svg" alt="JavaScript logo" height="200px">
+                <p>JavaScript to język programowania używany do tworzenia interaktywnych elementów na stronach
+                    internetowych. Pozwala na manipulowanie strukturą HTML i stylami CSS w czasie rzeczywistym, co
+                    umożliwia dynamiczne zmiany na stronie bez konieczności jej przeładowywania.</p>
+                <p>Podstawowe elementy JavaScript:
+                    Zmienne - przechowują dane (var, let, const)
+                    stałe - przechowują niezmienne dane (const)
+                    Operatory - symbole do wykonywania operacji matematycznych i logicznych (+, -, *, /, %, ==, ===, !=,
+                    !==, &lt;,&gt;, &lt;=,&gt;=)
+                            Funkcje - bloki kodu wykonujące określone zadania
+                            Instrukcje warunkowe - if, else, switch
+                            Pętle - for, while, do...while, for ...of, for ...in
+                            Tablice - struktury danych przechowujące listy wartości
+                            Obiekty - struktury danych przechowujące właściwości i metody
+                            wartości logiczne - true, false
+                            literały - liczby, stringi
+
+                </p>
+                <h3 class="section__header">Zmiennie w JavaScript</h3>
+                <p>Zmienne w JavaScript służą do przechowywania danych. Można je deklarować za pomocą słów kluczowych
+                    var,
+                    let lub const. Różnice między nimi:
+                    var - zmienna o zasięgu funkcji, może być redeklarowana i hoistowana
+                    let - zmienna o zasięgu bloku, nie może być redeklarowana, ale jest hoistowana (nie można jej
+                    użyć przed deklaracją)
+                    const - stała o zasięgu bloku, nie może być redeklarowana ani przypisana ponownie, ale jest
+                    hoistowana (nie można jej użyć przed deklaracją)
+                    Rodzaje danych:
+                    number - liczby (np. 42, 3.14)
+                    bigint - duże liczby całkowite (np. 9007199254740991n)
+                    string - tekst (np. "Hello, world!")
+                    boolean - wartości logiczne (true, false)
+                    null - brak wartości
+                    undefined - niezdefiniowana wartość
+                    symbol - unikalne identyfikatory
+                    object - struktury danych przechowujące właściwości i metody (np. {name: "Alice", age: 30})
+                    <strong>type of</strong> - operator zwracający typ danych (np. typeof 42 // "number", typeof "Hello"
+                    // "string")
+                </p>
+                <h3 class="section__header">DOM</h3>
+                <p>DOM (Document Object Model) to interfejs programistyczny dla dokumentów HTML i XML. Pozwala na
+                    manipulowanie strukturą, stylem i treścią strony internetowej za pomocą JavaScript.</p>
+                <p>Podstawowe metody manipulacji DOM:
+                </p><ol>
+                    <li>document.getElementById() - pobiera element o określonym id</li>
+                    <li>document.getElementsByClassName() - pobiera elementy o określonej klasie</li>
+                    <li>document.getElementsByTagName() - pobiera elementy o określonym tagu</li>
+                    <li>document.querySelector() - pobiera pierwszy element pasujący do selektora CSS</li>
+                    <li>document.querySelectorAll() - pobiera wszystkie elementy pasujące do selektora CSS</li>
+                    <li>element.innerHTML - zmienia zawartość HTML elementu</li>
+                    <li>element.style - zmienia style CSS elementu</li>
+                    <li>element.classList - zarządza klasami elementu (add, remove, toggle)</li>
+                    <li>element.setAttribute() - ustawia atrybut elementu</li>
+                    <li>element.getAttribute() - pobiera wartość atrybutu elementu</li>
+                    <li>element.addEventListener() - dodaje nasłuchiwanie zdarzeń do elementu</li>
+                    <li>element.removeEventListener() - usuwa nasłuchiwanie zdarzeń z elementu</li>
+                </ol>
+                <p></p>
+            </article>
+
+            <article id="git-github" class="section__article">
+                <h2 class="section__header">GIT i GitHub</h2>
+                <p>Git to system kontroli wersji, który pozwala śledzić zmiany w plikach i zarządzać projektem. GitHub
+                    to platforma oparta na Git, umożliwiająca współpracę nad projektami oraz hostowanie repozytoriów.
+                </p>
+                <p>Podstawowe polecenia Git:
+                    git init - inicjalizacja repozytorium
+                    git add - dodanie plików do staging area
+                    git commit - zatwierdzenie zmian
+                    git push - przesłanie zmian na serwer
+                    git pull - pobranie zmian z serwera
+                </p>
+                <p>GitHub:
+                    https://github.com/ - strona główna GitHub
+                    https://docs.github.com/ - dokumentacja GitHub
+                </p>
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">Nazywanie rzeczy</h2>
+                <ul>
+                    <li>Nazywamy bez polskich znaków i spacji</li>
+                    <li>Angielskie słowa</li>
+                    <li>Trzymamy się jednego schematu</li>
+                </ul>
+                <h3 class="section__header">Konwencje nazewnictwa</h3>
+                <ol>
+                    <li>camelCase - pierwsze słowo małą literą, kolejne z dużej (np. mojaZmienna)</li>
+                    <li>PascalCase - każde słowo z dużej litery (np. MojaZmienna)</li>
+                    <li>snake_case - słowa oddzielone podkreśleniami (np. moja_zmienna)</li>
+                    <li>kebab-case - słowa oddzielone myślnikami (np. moja-zmienna)</li>
+                </ol>
+                <h3 class="section__header">BEM - Block Element Modifier</h3>
+                <p>BEM to metodyka nazewnictwa klas CSS, która pomaga tworzyć skalowalne i utrzymywalne style.</p>
+                <ul>
+                    <li>Block - niezależny element strony (np. menu, przycisk)</li>
+                    <li>Element - część bloku (np. menu__item, przycisk__text)</li>
+                    <li>Modifier - wersja elementu lub bloku (np. przycisk--primary, menu__item--active)</li>
+                </ul>
+                Przykłady:
+                <ul>
+                    <li>.button - blok</li>
+                    <li>.button__icon - element</li>
+                    <li>.button--primary - modyfikator</li>
+                </ul>
+                <a href="/WTF_M04L10%20-%20BEM.pdf" target="_blank">WTF M04L10 - BEM</a>
+
+
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">Jak działa internet i przeglądrka</h2>
+                <p>Przeglądarka internetowa to oprogramowanie służące do wyświetlania stron internetowych. Pobiera
+                    pliki z serwera za pomocą protokołu HTTP/HTTPS i renderuje je na ekranie użytkownika.</p>
+                <p>Podstawowe elementy działania internetu:
+                    Serwer - komputer przechowujący pliki stron internetowych
+                    Klient - przeglądarka użytkownika
+                    Protokół HTTP/HTTPS - zasady komunikacji między klientem a serwerem
+                    DNS - system tłumaczący nazwy domen na adresy IP
+                </p>
+                <h3 class="section__header">Z czego składa się URL</h3>
+                <p>URL (Uniform Resource Locator) to adres internetowy składający się z kilku części:
+                    Protokół - np. http:// lub https://
+                    Domenna - nazwa strony, np. www.przyklad.com
+                    Ścieżka - lokalizacja zasobu na serwerze, np. /katalog/plik.html
+                    Parametry - dodatkowe informacje przekazywane do serwera, np. ?id=123
+                    Fragment - odwołanie do konkretnej sekcji na stronie, np. #sekcja1
+                    / - root katalog
+                    Przykład pełnego URL: https://www.przyklad.com/katalog/plik.html?id=123#sekcja1
+                </p>
+                <h3 class="section__header">Jak działa przeglądarka internetowa</h3>
+                <p>Przeglądarka internetowa działa w kilku etapach:
+                    1. Wpisuje się adres URL w pasek adresu.
+                    2. Przeglądarka szykad adres IP serwera za pomocą DNS.
+                    3. Przeglądarka wysyła żądanie do serwera za pomocą protokołu HTTP/HTTPS.
+                    4. Serwer odpowiada, przesyłając pliki HTML, CSS i JavaScript.
+                    5. Przeglądarka analizuje kod HTML i CSS, a następnie renderuje stronę na ekranie użytkownika.
+                </p>
+                <h3 class="section__header">Kody odpowiedzi HTTP</h3>
+                <p>Kody odpowiedzi HTTP są trzycyfrowymi kodami, które serwer wysyła do przeglądarki w celu informowania
+                    o stanie zapytania:
+                    1XX - Informational - informacja o przetwarzaniu zapytania
+                    200 - OK - zapytanie zakończone sukcesem
+                    30X - Redirection - przekierowanie do innego zasobu
+                    400 - Bad Request - błędne zapytanie
+                    401 - Unauthorized - brak autoryzacji
+                    403 - Forbidden - dostęp zabroniony
+                    404 - Not Found - strona nie została znaleziona
+                    50X - Internal Server Error - błąd wewnętrzny serwera
+                </p>
+                <h3 class="section__header">Czym jest root? Ścieżki względne i bezwzględne</h3>
+                <p>Root (główny katalog) to katalog główny systemu plików. W kontekście internetu, root to katalog
+                    główny serwera WWW.
+                    Ścieżki bezwzględne zaczynają się od znaku "/", np. /katalog/plik.html.
+                    Ścieżki względne są względem bieżącego katalogu, np. katalog/plik.html.
+                </p>
+
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">Terminal linuksowy</h2>
+                <p>Terminal to interfejs tekstowy do komunikacji z systemem operacyjnym. W systemach Linux i macOS można
+                    go otworzyć za pomocą skrótu Ctrl+Alt+T.</p>
+                <h3 class="section__header">Podstawowe komendy terminala</h3>
+                <ul class="section__list">
+                    <li>ls - lista plików i katalogów w bieżącym katalogu</li>
+                    <li>cd - zmiana katalogu (np. cd katalog cd .. katalog wyżej, cd ~ katalog domowy)</li>
+                    <li>pwd - pokazuje aktualny katalog roboczy</li>
+                    <li>mkdir - tworzy nowy katalog (np. mkdir nowy_katalog)</li>
+                    <li>touch - tworzy nowy plik (np. touch nowy_plik.txt)</li>
+                    <li>rm - usuwa plik lub katalog (np. rm plik.txt)</li>
+                    <li>cp - kopiuje plik lub katalog (np. cp plik.txt kopia_plik.txt)</li>
+                    <li>mv - przenosi lub zmienia nazwę pliku lub katalogu (np. mv stara_nazwa.txt nowa_nazwa.txt)</li>
+                    <li>cat - wyświetla zawartość pliku (np. cat plik.txt)</li>
+                    <li>nano - edytor tekstu w terminalu (np. nano plik.txt)</li>
+                    <li>clear - czyści ekran terminala</li>
+                    <li>code . - otwiera edytor kodu VS Code w bieżącym katalogu</li>
+                </ul>
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">Debugging - odrobaczanie</h2>
+                <p>Debugging to proces identyfikowania i usuwania błędów w kodzie. W JavaScript można użyć narzędzi
+                    deweloperskich w przeglądarce (np. Chrome DevTools) do debugowania kodu.</p>
+                <p>Podstawowe techniki debugowania:
+                    console.log() - wyświetla informacje w konsoli przeglądarki
+                    debugger - zatrzymuje wykonywanie kodu w miejscu, gdzie jest umieszczony
+                    breakpoints - punkty przerwania, które pozwalają na zatrzymanie wykonywania kodu w określonych
+                    miejscach
+                    watch expressions - obserwowanie wartości zmiennych podczas debugowania
+                    call stack - stos wywołań, który pokazuje, jakie funkcje zostały wywołane i w jakiej kolejności
+                </p>
+            </article>
+            <article class="section__article">
+                <h2 class="section__header">Normalizacja vs reset</h2>
+                <p>Normalizacja i reset to techniki stosowane w CSS w celu zapewnienia spójności wyglądu stron
+                    internetowych
+                    na różnych przeglądarkach. Normalizacja (normalize.css) to zbiór reguł CSS, które mają na celu
+                    ujednolicenie domyślnych stylów przeglądarek, zachowując jednocześnie pewne różnice. Reset CSS to
+                    bardziej drastyczne podejście, które usuwa wszystkie domyślne style przeglądarek, co może prowadzić
+                    do
+                    konieczności ponownego definiowania wielu stylów od podstaw.</p>
+                <h3 class="section__header">normalize.css</h3>
+                <p>normalize.css to popularna biblioteka CSS, która ma na celu ujednolicenie domyślnych stylów
+                    przeglądarek, zachowując jednocześnie pewne różnice. Normalizacja jest mniej drastyczna niż reset,
+                    ponieważ nie usuwa wszystkich domyślnych stylów, ale raczej je dostosowuje, aby były bardziej
+                    spójne między przeglądarkami. Normalize.css jest często używany jako baza dla projektów webowych,
+                    ponieważ pozwala na zachowanie pewnych domyślnych stylów, które mogą być przydatne, jednocześnie
+                    eliminując różnice między przeglądarkami.<br>
+                    Normalize.css jest bardziej popularny niż reset.css, ponieważ pozwala na zachowanie pewnych
+                    domyślnych stylów, które mogą być przydatne, jednocześnie eliminując różnice między przeglądarkami,
+                    co może prowadzić do mniejszej ilości kodu CSS, który trzeba napisać, aby osiągnąć pożądany wygląd
+                    strony.<a href="https://necolas.github.io/normalize.css/">Normalizacja CSS</a>
+                </p><figure>
+                    <img src="/boxsizing.d314eafe.png" alt="normalize.css">
+                    <figcaption>Źródło: MDN Web Docs - normalize.css</figcaption>
+                </figure>
+
+                <p></p>
+                <h3 class="section__header">reset.css</h3>
+                <p>Reset CSS to technika, która usuwa wszystkie domyślne style przeglądarek, co może prowadzić do
+                    konieczności ponownego definiowania wielu stylów od podstaw. Reset CSS jest bardziej drastyczny niż
+                    normalizacja, ponieważ całkowicie usuwa domyślne style, co może być czasochłonne i wymagać więcej
+                    pracy, aby osiągnąć pożądany wygląd strony. Reset CSS jest mniej popularny niż normalize.css,
+                    ponieważ może prowadzić do większej ilości kodu CSS, który trzeba napisać, aby przywrócić podstawowe
+                    style, takie jak marginesy, paddingi czy czcionki.</p>
+            </article>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Strona stworzona przez Dawida Kumora <a class="footer__link" href="#top">Wróć do
+                góry</a> </p>
+    </footer>
+    <script defer="" src="/homepage.de158e3a.js"></script>
+
+
+<script src="/nauka-html.c7b808e1.js"></script></body></html>
