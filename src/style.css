@@ -1,127 +1,129 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .header {
-	position: sticky;
-	top: 0;
-	min-height: 50px;
-		display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  position: sticky;
+  top: 0;
+  min-height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .hamburger {
-	padding:10px;
-	background: blueviolet;
-	color: whitesmoke;
-	font-weight: 700;
-	border: 0;
-	font-size: 1.5rem;
-
+  padding: 10px;
+  background: blueviolet;
+  color: whitesmoke;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.5rem;
 }
 
 .navigation {
-	padding: 16px;
-	background: lightblue;
-	display: none;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 24px;
-	position:absolute;
-	top: 50px;
-	width: 100%;
-
+  padding: 16px;
+  background: lightblue;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
 }
 .navigation--open {
-	display: flex;
+  display: flex;
 }
 
 .navigation__link {
-	color: rgb(190, 179, 18);
-	text-decoration: none;
-	font-size: 15px;
-	margin-right: 20px;
+  color: rgb(190, 179, 18);
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
 }
 
 #top {
-	padding: 16px;
-	background: darkgrey;
+  padding: 16px;
+  background: darkgrey;
 }
 
 .section {
-	padding: 16px;
-	color: whitesmoke;
-	background: #22C1C3;
-	background: radial-gradient(circle, rgba(34, 193, 195, 0.64) 0%, rgba(253, 187, 45, 1) 100%);
+  padding: 16px;
+  color: whitesmoke;
+  background: #22c1c3;
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 0.64) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 .section__article {
-	margin-bottom: 16px;
-	background: green;
-	padding: 16px;
-	border-radius: 32px;
+  margin-bottom: 16px;
+  background: green;
+  padding: 16px;
+  border-radius: 32px;
 }
 
 .section__image {
-	width: 50%;
-	display: block;
-	border-radius: 16px;
+  width: 50%;
+  display: block;
+  border-radius: 16px;
 }
 
 .section__list {
-	list-style-type: circle;
+  list-style-type: circle;
 }
 
 main {
-	max-width: 800px;
-	min-width: 100px;
-	margin: 0 auto;
+  max-width: 800px;
+  min-width: 100px;
+  margin: 0 auto;
 }
 
 .footer {
-	background: lightblue;
-	padding: 20px;
-	max-width: 800px;
-	min-width: 100px;
-	margin: 0 auto;
+  background: lightblue;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 100px;
+  margin: 0 auto;
 }
 
 .footer__text {
-	color: rgb(190, 179, 18);
-	font-size: 15px;
+  color: rgb(190, 179, 18);
+  font-size: 15px;
 }
 
 .footer__link {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .page-header__heading {
-	background: lightblue;
-	font-size: 10px;
+  background: lightblue;
+  font-size: 10px;
 }
 .page-header__button {
-	background: blueviolet;
-	color: whitesmoke;
-	font-weight: 700;
-	border: 0;
-	display: inline-block;
-	padding: 4px 8px;
-	border-radius: 4px;
+  background: blueviolet;
+  color: whitesmoke;
+  font-weight: 700;
+  border: 0;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 body {
-	font-family: Arial, sans-serif;
-	font-weight: 400;
-	line-height: 1.6;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
 
   background-image: linear-gradient(
     175deg,
@@ -139,41 +141,39 @@ body {
     hsl(188deg 83% 90%) 82%,
     hsl(220deg 43% 96%) 100%
   );
-
 }
 
 .section__table {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .section__table caption {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
-	.navigation {
-	padding: 16px;
-	background: lightblue;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 24px;
-	flex-direction: row;
-	position: static;
-
-}
-.navigation__link {
-	color: rgb(190, 179, 18);
-	text-decoration: none;
-	font-size: 15px;
-	margin-right: 20px;
-}
-.header {
-	position: sticky;
-	top: 0;
-	min-height: 50px;
-}
-.hamburger {
-	display: none;
-}
+  .navigation {
+    padding: 16px;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row;
+    position: static;
+  }
+  .navigation__link {
+    color: rgb(190, 179, 18);
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    min-height: 50px;
+  }
+  .hamburger {
+    display: none;
+  }
 }
